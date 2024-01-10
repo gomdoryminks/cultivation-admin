@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>불법산림훼손 관리 서비스</title>
+		<meta name="description" content="불법산림훼손 관리 서비스">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=1400">
+		
+		<link href="../src/styles/css/font.css" type="text/css" rel="stylesheet">
+		<link href="../src/styles/css/style.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- 산림훼손조회>상세>훼손지(복구중) -->
+		<div class="wrap">
+			<!-- header -->
+			<header class="header">
+				<!-- hLogo : 헤더 로고 -->
+				<div class="hLogo">
+					<img src="../src/assets/images/img-logo-0.svg" alt="헤더 로고" />
+					<span>불법산림훼손 관리 서비스</span>
+				</div>
+
+				<!-- nav -->
+				<nav class="nav">
+					<!-- nMenuList : 헤더 왼쪽 메뉴 -->
+					<ul class="nMenuList">
+						<!-- nMenu06 : 산림 훼손 조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu06 on">
+							<a href="#">산림 훼손 조회</a>
+						</li>
+						<!-- nMenu07 : 훼손지 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu07">
+							<a href="#">훼손지 관리</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="hMenuArea">
+					<!-- hMenuList : 헤더 오른쪽 메뉴 -->
+					<ul class="hMenuList">
+						<li>
+							<div class="hMenuImg"><img src="../src/assets/images/icon-user-0.svg" alt="계정 아이콘" /></div>
+							<div class="hMenuTxt">홍길동<span>님</span></div>
+						</li>
+						<li>
+							<button type="button" class="bHeight01 bFillType01" onclick="">
+								<span>로그아웃</span>
+							</button>
+						</li>
+						<!-- on : 알림창을 노출할 경우 추가 -->
+						<li>
+							<!-- hMenuTit : 알림 메뉴명 -->
+							<div class="hMenuTit" onclick="">
+								<div class="hMenuImg">
+									<img src="../src/assets/images/icon-bell-0.svg" alt="알림 아이콘" />
+									<!-- hMenuCnt : 알림 개수 -->
+									<span class="hMenuCnt">5</span>
+								</div>
+								<div class="hMenuTxt">알림</div>
+							</div>
+							<!-- hMenuLayer : 알림창 -->
+							<div class="hMenuLayer">
+								<!-- cTableTopArea : 테이블 상단 영역 -->
+								<div class="cTableTopArea">
+									<div class="cTableTopLeft">
+										<div class="cTableTopTit">의심지 알림</div>
+										<ul class="cTableTopData">
+											<!-- num : 숫자일 경우 추가 -->
+											<li>총 <span class="num">12</span> 건</li>
+										</ul>
+									</div>
+									<div class="cTableTopRight">
+										<button type="button" class="bClose2" onclick="">
+											<span>알림창 닫기</span>
+										</button>
+									</div>
+								</div>
+								<!-- cListTableArea : 목록 테이블 영역 -->
+								<div class="cListTableArea">
+									<table class="cListTable">
+										<caption class="not-view">불법산림훼손 관리 서비스의 의심지 알림 목록</caption>
+										<colgroup>
+											<col width="48" />
+											<col width="*" />
+											<col width="80" />
+											<col width="80" />
+											<col width="14" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">위치</th>
+												<th scope="col">주소</th>
+												<th scope="col">면적(㎡)</th>
+												<th scope="col">변화율(%)</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr>
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>80</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr class="ok">
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>50</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr>
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>60</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr>
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>88</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- cPagingArea : 페이징 영역 -->
+								<div class="cPagingArea">
+									<ul class="cPagingList">
+										<!-- firstArrow : 맨 처음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow firstArrow">
+											<a href="#"></a>
+										</li>
+										<!-- prevArrow : 이전페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow prevArrow">
+											<a href="#"></a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li class="on">
+											<a href="#">1</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">2</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">3</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">4</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">5</a>
+										</li>
+										<!-- nextArrow : 다음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow nextArrow">
+											<a href="#"></a>
+										</li>
+										<!-- lastArrow : 맨 마지막페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow lastArrow">
+											<a href="#"></a>
+										</li>
+									</ul>
+								</div>
+								<!-- cTableBottomArea : 테이블 하단 영역 -->
+								<div class="cTableBottomArea">
+									<div class="cTableBottomRight">
+										<button type="button" class="bLineType01" onclick="">
+											<span>전체 알림삭제</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-setting-0.svg" alt="관리자 아이콘" /></div>
+								<div class="hMenuTxt">관리자</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-home-1.svg" alt="홈 아이콘" /></div>
+								<div class="hMenuTxt">홈</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<!-- content -->
+			<div class="cWrap">
+				<!-- cMap : 지도 페이지 -->
+				<section class="cMap">
+					<!-- mapArea : 지도가 노출되는 영역, mapBackground13 : 지도 배경 예시 이미지 -->
+					<article class="mapArea mapBackground13"></article>
+
+					<!-- mapLayerArea : 지도 레이어창 영역 -->
+					<article class="mapLayerArea">
+						<!-- mapLayerLine00 : 첫번째 라인의 레이어창 영역 -->
+						<div class="mapLayerLine00">
+							<!-- 산림 훼손 조회, hide : 레이어창을 닫았을 경우 추가, mapLayerBig : 조회하는 레이어창일 경우 추가 -->
+							<div class="mapLayer mapLayerBig">
+								<!-- mapLayerTitArea : 레이어창 제목 영역 -->
+								<div class="mapLayerTitArea">
+									<div class="mapLayerTit">
+										<span>산림 훼손 조회</span>
+									</div>
+									<button type="button" class="mapLayerTitBtn" onclick="">
+										<span>레이어창 버튼</span>
+									</button>
+								</div>
+								<!-- mapLayerConArea : 레이어창 내용 영역 -->
+								<div class="mapLayerConArea">
+									<div class="mlcTit">위치 선택</div>
+									<div class="mlcCon">
+										<div class="cRadio">
+											<input type="radio" id="radioItem0000" name="radioItem00" checked onchange="" />
+											<label for="radioItem0000">지역조회</label>
+										</div>
+										<div class="cRadio">
+											<input type="radio" id="radioItem0001" name="radioItem00" onchange="" />
+											<label for="radioItem0001">주소조회</label>
+										</div>
+										<!-- mlcResult : 위치 선택 결과 영역 -->
+										<div class="mlcResult">
+											<div class="cFlex">
+												<select>
+													<option value="서귀포시">서귀포시</option>
+													<option value="제주시">제주시</option>
+												</select>
+												<select>
+													<option value="">전체</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="mlcTit">기간 선택</div>
+									<div class="mlcCon">
+										<!-- mlcResult : 위치 선택 결과 영역 -->
+										<div class="mlcResult">
+											<div class="cFlex">
+												<select>
+													<option value="2022">2022</option>
+												</select>
+												<!-- cDateInput : 날짜 입력창 -->
+												<input type="text" class="cDateInput" value="01-01" autocomplete="off" />
+												<span>~</span>
+												<!-- cDateInput : 날짜 입력창 -->
+												<input type="text" class="cDateInput" value="12-31" autocomplete="off" />
+											</div>
+										</div>
+									</div>
+									<button type="button" class="bHeight04" onclick="">
+										<span>확인</span>
+									</button>
+								</div>
+							</div>
+
+							<!-- 범례, hide : 레이어창을 닫았을 경우 추가 -->
+							<div class="mapLayer">
+								<!-- mapLayerTitArea : 레이어창 제목 영역 -->
+								<div class="mapLayerTitArea">
+									<div class="mapLayerTit">
+										<img src="../src/assets/images/icon-list-0.svg" alt="범례" />
+										<span>범례</span>
+									</div>
+									<button type="button" class="mapLayerTitBtn" onclick="">
+										<span>레이어창 버튼</span>
+									</button>
+								</div>
+								<!-- mapLayerConArea : 레이어창 내용 영역 -->
+								<div class="mapLayerConArea">
+									<ul class="mlcList">
+										<li>
+											<div class="mlcLegend cColor52">의심지(AI 탐지)</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor53">의심지(수사중)</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor54">훼손지(복구중)</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor55">복구지</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor56">산지전용 허가지</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- mapLayerLine01 : 두번째 라인의 레이어창 영역 -->
+						<div class="mapLayerLine01">
+							<!-- 지도 레이어 설정창, hide : 레이어창을 닫았을 경우 추가 -->
+							<div class="mapLayer">
+								<!-- mapLayerTitArea : 레이어창 제목 영역 -->
+								<div class="mapLayerTitArea">
+									<div class="mapLayerTit">
+										<img src="../src/assets/images/icon-layer-0.svg" alt="지도 레이어 설정" />
+										<span>지도 레이어 설정</span>
+									</div>
+									<button type="button" class="mapLayerTitBtn" onclick="">
+										<span>레이어창 버튼</span>
+									</button>
+								</div>
+								<!-- mapLayerConArea : 레이어창 내용 영역 -->
+								<div class="mapLayerConArea">
+									<ul class="mlcList">
+										<li>
+											<div class="cCheckbox">
+												<input type="checkbox" id="checkboxItem00" checked />
+												<label for="checkboxItem00">산림훼손</label>
+											</div>
+											<!-- mlcMax4 : 최대 4개 항목을 노출할 경우 추가, 기본은 최대 2개 항목이 노출됨 -->
+											<ul class="mlcMax4">
+												<li>
+													<div class="cCheckbox">
+														<input type="checkbox" id="checkboxItem0000" checked />
+														<label for="checkboxItem0000">의심지(AI 탐지)</label>
+													</div>
+												</li>
+												<li>
+													<div class="cCheckbox">
+														<input type="checkbox" id="checkboxItem0001" checked />
+														<label for="checkboxItem0001">의심지(수사중)</label>
+													</div>
+												</li>
+												<li>
+													<div class="cCheckbox">
+														<input type="checkbox" id="checkboxItem0002" checked />
+														<label for="checkboxItem0002">훼손지(복구중)</label>
+													</div>
+												</li>
+												<li>
+													<div class="cCheckbox">
+														<input type="checkbox" id="checkboxItem0003" checked />
+														<label for="checkboxItem0003">복구지</label>
+													</div>
+												</li>
+												<li>
+													<div class="cCheckbox">
+														<input type="checkbox" id="checkboxItem0004" />
+														<label for="checkboxItem0004">의심지(AI 탐지)</label>
+													</div>
+												</li>
+												<li>
+													<div class="cCheckbox">
+														<input type="checkbox" id="checkboxItem0005" />
+														<label for="checkboxItem0005">의심지(수사중)</label>
+													</div>
+												</li>
+												<li>
+													<div class="cCheckbox">
+														<input type="checkbox" id="checkboxItem0006" />
+														<label for="checkboxItem0006">훼손지(복구중)</label>
+													</div>
+												</li>
+												<li>
+													<div class="cCheckbox">
+														<input type="checkbox" id="checkboxItem0007" />
+														<label for="checkboxItem0007">복구지</label>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="cCheckbox">
+												<input type="checkbox" id="checkboxItem01" />
+												<label for="checkboxItem01">연속지적도</label>
+											</div>
+										</li>
+										<li>
+											<div class="cCheckbox">
+												<input type="checkbox" id="checkboxItem02" />
+												<label for="checkboxItem02">산지전용 허가지</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<!-- mapPositionArea : 지도 위치 검색창 영역 -->
+					<article class="mapPositionArea">
+						<ul class="mapPositionList">
+							<li>
+								<div class="mapPositionTit">제주특별자치도</div>
+							</li>
+							<!-- on : 셀렉트박스를 노출할 경우 추가 -->
+							<li>
+								<div class="mapPositionTit" onclick="">서귀포시</div>
+								<!-- mapPositionSelect : 지역 셀렉트창 (시군) -->
+								<ul class="mapPositionSelect">
+									<li onclick="">서귀포시</li>
+									<li onclick="">제주시</li>
+								</ul>
+							</li>
+							<!-- on : 셀렉트박스를 노출할 경우 추가 -->
+							<li>
+								<div class="mapPositionTit" onclick="">대정읍</div>
+								<!-- mapPositionSelect : 지역 셀렉트창 (읍/면/동) -->
+								<ul class="mapPositionSelect">
+									<li onclick="">강정동</li>
+									<li onclick="">남원읍</li>
+									<li onclick="">대륜동</li>
+									<li onclick="">대정읍</li>
+									<li onclick="">대천동</li>
+									<li onclick="">상예동</li>
+									<li onclick="">성산읍</li>
+									<li onclick="">하예동</li>
+									<li onclick="">표선면</li>
+									<li onclick="">토평동</li>
+								</ul>
+							</li>
+						</ul>
+					</article>
+
+					<!-- mapBtnArea : 지도 오른쪽 버튼 영역 -->
+					<article class="mapBtnArea">
+						<!-- mapBtnTypeList : 지도 타입 설정 -->
+						<ul class="mapBtnTypeList">
+							<!-- mapCommonType : 일반지도, on : 지도 타입을 선택했을 경우 추가 -->
+							<li class="mapCommonType on" onclick="">
+								<div class="mapBtnTypeImg"></div>
+								<div class="mapBtnTypeTxt">일반지도</div>
+							</li>
+							<!-- mapSatelliteType : 위성지도, on : 지도 타입을 선택했을 경우 추가 -->
+							<li class="mapSatelliteType" onclick="">
+								<div class="mapBtnTypeImg"></div>
+								<div class="mapBtnTypeTxt">위성지도</div>
+							</li>
+						</ul>
+
+						<!-- mapBtnZoomList : 지도 확대/축소 설정 -->
+						<ul class="mapBtnZoomList">
+							<!-- mapZoomIn : 지도 확대 -->
+							<li class="mapZoomIn" onclick=""></li>
+							<!-- mapZoomOut : 지도 축소 -->
+							<li class="mapZoomOut" onclick=""></li>
+						</ul>
+
+						<!-- mapBtnFuncList : 지도 기능 설정 -->
+						<ul class="mapBtnFunList">
+							<!-- mapDistance : 거리재기 -->
+							<li class="mapDistance" onclick=""></li>
+							<!-- mapExtent : 면적재기 -->
+							<li class="mapExtent" onclick=""></li>
+							<!-- mapPrint : 인쇄 -->
+							<li class="mapPrint" onclick=""></li>
+						</ul>
+					</article>
+
+					<!-- mapInfoArea : 지도 정보창 영역, on : 정보창을 열었을 경우 추가, hide : 정보창을 접을 경우 추가 -->
+					<article class="mapInfoArea on">
+						<button type="button" class="mapInfoBtn" onclick="">
+							<span>정보창 버튼</span>
+						</button>
+
+						<!-- mapInfoDetailBox : 상세창일 경우 추가 -->
+						<div class="mapInfoBox mapInfoDetailBox">
+							<!-- mapInfoConArea : 정보창 내용 영역 -->
+							<div class="mapInfoConArea">
+								<div class="micTopArea">
+									<button type="button" class="mapInfoBackBtn" onclick="">
+										<span>정보창 뒤로가기 버튼</span>
+									</button>
+									<button type="button" class="mapInfoCloseBtn" onclick="">
+										<span>정보창 닫기 버튼</span>
+									</button>
+									<!-- micImgArea : 이미지 영역 -->
+									<div class="micImgArea">
+										<img src="../src/assets/images/img-farm-2.svg" alt="농장 이미지" />
+										<button type="button" class="bHeight03 bLineType00 bRound bVideo" onclick="">
+											<span>촬영 영상 자세히 보기</span>
+										</button>
+									</div>
+									<!-- micCommonBottomArea : 공통 하단 영역 -->
+									<div class="micCommonBottomArea">
+										<div class="micCommonBottomRight">
+											<button type="button" class="bLineType03" onclick="">
+												<span>훼손지 관리로 이동</span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="micMainArea">
+									<div class="micInfoWrap">
+										<!-- micCommonTopArea : 공통 상단 영역 -->
+										<div class="micCommonTopArea">
+											<div class="micCommonTopLeft">
+												<div class="micCommonTopTit">의심지(AI탐지)</div>
+											</div>
+										</div>
+										<!-- micInfoArea : 바탕색이 있는 상세 정보 영역, micInfoArea2 : 바탕색이 없는 상세 정보 영역 -->
+										<div class="micInfoArea">
+											<ul class="micDataList">
+												<li>
+													<span class="cChipLine00">분석영상</span>2022- DRONE- NIA- 30M
+												</li>
+												<li>
+													<span class="cChipLine00">촬영시기</span>2022/08/20
+												</li>
+											</ul>
+											<ul class="micInfoList">
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li>
+													<div class="tit">신뢰도(%)</div>
+													<div class="con">
+														<span class="num">85</span>
+													</div>
+												</li>
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li class="half">
+													<div class="tit">면적(㎡)</div>
+													<div class="con">
+														<span class="num">276.24</span>
+													</div>
+												</li>
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li class="half">
+													<div class="tit">변화율(%)</div>
+													<div class="con">
+														<span class="num">30</span>
+													</div>
+												</li>
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li>
+													<div class="tit">주소</div>
+													<div class="con">서귀포시 돈내코로 267-1</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="micInfoWrap">
+										<!-- micCommonTopArea : 공통 상단 영역 -->
+										<div class="micCommonTopArea">
+											<div class="micCommonTopLeft">
+												<div class="micCommonTopTit">의심지(수사중)</div>
+											</div>
+										</div>
+										<!-- micInfoArea : 바탕색이 있는 상세 정보 영역, micInfoArea2 : 바탕색이 없는 상세 정보 영역 -->
+										<div class="micInfoArea">
+											<ul class="micInfoList">
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li class="half">
+													<div class="tit">등록자</div>
+													<div class="con">홍길동</div>
+												</li>
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li class="half">
+													<div class="tit">등록일</div>
+													<div class="con">
+														<span class="num">2023.05.30</span>
+													</div>
+												</li>
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li class="half">
+													<div class="tit">구분</div>
+													<div class="con">불법산지전용 의심 지역</div>
+												</li>
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li class="half">
+													<div class="tit">원인</div>
+													<div class="con">택지조성</div>
+												</li>
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li>
+													<div class="tit">원인 세부현황</div>
+													<div class="con">개발행위 등</div>
+												</li>
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li>
+													<div class="tit">비고</div>
+													<div class="con">비고내용</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="micInfoWrap">
+										<!-- micCommonTopArea : 공통 상단 영역 -->
+										<div class="micCommonTopArea">
+											<div class="micCommonTopLeft">
+												<div class="micCommonTopTit">훼손지(복구중)</div>
+												<button type="button" onclick="">
+													<span>등록(상태 변경)</span>
+												</button>
+											</div>
+										</div>
+										<!-- micInfoArea : 바탕색이 있는 상세 정보 영역, micInfoArea2 : 바탕색이 없는 상세 정보 영역 -->
+										<div class="micInfoArea">
+											<ul class="micInfoList">
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li class="half">
+													<div class="tit">등록자</div>
+													<div class="con">홍길동</div>
+												</li>
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li class="half">
+													<div class="tit">등록일</div>
+													<div class="con">
+														<span class="num">2023.05.30</span>
+													</div>
+												</li>
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li>
+													<div class="tit">사건번호</div>
+													<div class="con">
+														<span class="num">2022-1077</span>
+													</div>
+												</li>
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li class="half">
+													<div class="tit">구분</div>
+													<div class="con">불법산지전용</div>
+												</li>
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li class="half">
+													<div class="tit">원인</div>
+													<div class="con">택지조성</div>
+												</li>
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li>
+													<div class="tit">원인 세부현황</div>
+													<div class="con">개발행위 등</div>
+												</li>
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li>
+													<div class="tit">위반 적용 법(벌칙조항)</div>
+													<div class="con">산지관리법제53조제1호</div>
+												</li>
+												<!-- half : 항목의 너비가 50%일 경우 추가 -->
+												<li>
+													<div class="tit">비고</div>
+													<div class="con">비고내용</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

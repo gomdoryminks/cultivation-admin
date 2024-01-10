@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>불법산림훼손 관리 서비스</title>
+		<meta name="description" content="불법산림훼손 관리 서비스">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=1400">
+		
+		<link href="../src/styles/css/font.css" type="text/css" rel="stylesheet">
+		<link href="../src/styles/css/style.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- 훼손지 관리>상세>복구지(내용 수정시) -->
+		<div class="wrap">
+			<!-- header -->
+			<header class="header">
+				<!-- hLogo : 헤더 로고 -->
+				<div class="hLogo">
+					<img src="../src/assets/images/img-logo-0.svg" alt="헤더 로고" />
+					<span>불법산림훼손 관리 서비스</span>
+				</div>
+
+				<!-- nav -->
+				<nav class="nav">
+					<!-- nMenuList : 헤더 왼쪽 메뉴 -->
+					<ul class="nMenuList">
+						<!-- nMenu06 : 산림 훼손 조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu06">
+							<a href="#">산림 훼손 조회</a>
+						</li>
+						<!-- nMenu07 : 훼손지 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu07 on">
+							<a href="#">훼손지 관리</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="hMenuArea">
+					<!-- hMenuList : 헤더 오른쪽 메뉴 -->
+					<ul class="hMenuList">
+						<li>
+							<div class="hMenuImg"><img src="../src/assets/images/icon-user-0.svg" alt="계정 아이콘" /></div>
+							<div class="hMenuTxt">홍길동<span>님</span></div>
+						</li>
+						<li>
+							<button type="button" class="bHeight01 bFillType01" onclick="">
+								<span>로그아웃</span>
+							</button>
+						</li>
+						<!-- on : 알림창을 노출할 경우 추가 -->
+						<li>
+							<!-- hMenuTit : 알림 메뉴명 -->
+							<div class="hMenuTit" onclick="">
+								<div class="hMenuImg">
+									<img src="../src/assets/images/icon-bell-0.svg" alt="알림 아이콘" />
+									<!-- hMenuCnt : 알림 개수 -->
+									<span class="hMenuCnt">5</span>
+								</div>
+								<div class="hMenuTxt">알림</div>
+							</div>
+							<!-- hMenuLayer : 알림창 -->
+							<div class="hMenuLayer">
+								<!-- cTableTopArea : 테이블 상단 영역 -->
+								<div class="cTableTopArea">
+									<div class="cTableTopLeft">
+										<div class="cTableTopTit">의심지 알림</div>
+										<ul class="cTableTopData">
+											<!-- num : 숫자일 경우 추가 -->
+											<li>총 <span class="num">12</span> 건</li>
+										</ul>
+									</div>
+									<div class="cTableTopRight">
+										<button type="button" class="bClose2" onclick="">
+											<span>알림창 닫기</span>
+										</button>
+									</div>
+								</div>
+								<!-- cListTableArea : 목록 테이블 영역 -->
+								<div class="cListTableArea">
+									<table class="cListTable">
+										<caption class="not-view">불법산림훼손 관리 서비스의 의심지 알림 목록</caption>
+										<colgroup>
+											<col width="48" />
+											<col width="*" />
+											<col width="80" />
+											<col width="80" />
+											<col width="14" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">위치</th>
+												<th scope="col">주소</th>
+												<th scope="col">면적(㎡)</th>
+												<th scope="col">변화율(%)</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr>
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>80</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr class="ok">
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>50</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr>
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>60</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr>
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>88</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- cPagingArea : 페이징 영역 -->
+								<div class="cPagingArea">
+									<ul class="cPagingList">
+										<!-- firstArrow : 맨 처음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow firstArrow">
+											<a href="#"></a>
+										</li>
+										<!-- prevArrow : 이전페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow prevArrow">
+											<a href="#"></a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li class="on">
+											<a href="#">1</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">2</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">3</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">4</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">5</a>
+										</li>
+										<!-- nextArrow : 다음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow nextArrow">
+											<a href="#"></a>
+										</li>
+										<!-- lastArrow : 맨 마지막페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow lastArrow">
+											<a href="#"></a>
+										</li>
+									</ul>
+								</div>
+								<!-- cTableBottomArea : 테이블 하단 영역 -->
+								<div class="cTableBottomArea">
+									<div class="cTableBottomRight">
+										<button type="button" class="bLineType01" onclick="">
+											<span>전체 알림삭제</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-setting-0.svg" alt="관리자 아이콘" /></div>
+								<div class="hMenuTxt">관리자</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-home-1.svg" alt="홈 아이콘" /></div>
+								<div class="hMenuTxt">홈</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<!-- content -->
+			<div class="cWrap">
+				<!-- cPage : 기본 페이지 -->
+				<section class="cPage">
+					<!-- pagePathArea : 페이지 경로 영역 -->
+					<article class="pagePathArea">
+						<ul class="pagePathList">
+							<li>
+								<a href="#">훼손지 관리</a>
+							</li>
+							<li>
+								<a href="#">훼손지 상세</a>
+							</li>
+						</ul>
+					</article>
+
+					<!-- pageTitArea : 페이지 제목 영역 -->
+					<article class="pageTitArea">
+						<div class="pageTitLeft">
+							<button type="button" class="bBack" onclick="">
+								<span>뒤로가기 버튼</span>
+							</button>
+							<div class="pageTit">훼손지 상세</div>
+							<button type="button" class="bHeight03 bLineType00 bRound bVideo2" onclick="">
+								<span>촬영 영상 보기</span>
+							</button>
+						</div>
+					</article>
+
+					<!-- pageConArea : 페이지 내용 영역 -->
+					<article class="pageConArea">
+						<div class="pageInfoWrap mt40">
+							<!-- pageCommonTopArea : 공통 상단 영역 -->
+							<div class="pageCommonTopArea">
+								<div class="pageCommonTopLeft">
+									<div class="pageCommonTopTit">의심지(AI탐지)</div>
+								</div>
+								<div class="pageCommonTopRight">
+									<button type="button" class="bLineType01 bDelete2" onclick="">
+										<span>삭제</span>
+									</button>
+								</div>
+							</div>
+							<div class="pageInfoArea">
+								<ul class="pageDataList">
+									<li>
+										<span class="cChipLine00">분석영상</span>2022- DRONE- NIA- 30M
+									</li>
+									<li>
+										<span class="cChipLine00">촬영시기</span>2022/08/20
+									</li>
+								</ul>
+								<ul class="pageInfoList">
+									<!-- child : 하위 항목이 있을 경우 추가 -->
+									<li>
+										<div class="pageInfoItem">
+											<div class="tit">신뢰도(%)</div>
+											<div class="con">
+												<span class="num">85</span>
+											</div>
+										</div>
+										<div class="pageInfoItem">
+											<div class="tit">변화율(%)</div>
+											<div class="con">
+												<span class="num">35</span>
+											</div>
+										</div>
+									</li>
+									<!-- child : 하위 항목이 있을 경우 추가 -->
+									<li>
+										<div class="pageInfoItem">
+											<div class="tit">면적(㎡)</div>
+											<div class="con">
+												<span class="num">276.24</span>
+											</div>
+										</div>
+										<div class="pageInfoItem">
+											<div class="tit">주소</div>
+											<div class="con">서귀포시 돈내코로 267-1</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="pageInfoWrap">
+							<!-- pageCommonTopArea : 공통 상단 영역 -->
+							<div class="pageCommonTopArea">
+								<div class="pageCommonTopLeft">
+									<div class="pageCommonTopTit">의심지(수사중)</div>
+								</div>
+								<div class="pageCommonTopRight">
+									<button type="button" class="bLineType01 bDelete2" onclick="">
+										<span>삭제</span>
+									</button>
+									<button type="button" class="bModify3" onclick="">
+										<span>저장</span>
+									</button>
+								</div>
+							</div>
+							<div class="pageInfoArea">
+								<ul class="pageInfoList">
+									<!-- child : 하위 항목이 있을 경우 추가 -->
+									<li>
+										<div class="pageInfoItem">
+											<div class="tit">등록자</div>
+											<div class="con">
+												<div class="cFlex">
+													<input type="text" value="홍길동" />
+												</div>
+											</div>
+										</div>
+										<div class="pageInfoItem">
+											<div class="tit">등록일</div>
+											<div class="con">
+												<!-- cDateInput : 날짜 입력창 -->
+												<input type="text" class="cDateInput" value="2023-05-30" autocomplete="off" />
+											</div>
+										</div>
+									</li>
+									<!-- child : 하위 항목이 있을 경우 추가 -->
+									<li>
+										<div class="pageInfoItem">
+											<div class="tit">구분</div>
+											<div class="con">
+												<input type="text" value="불법산지전용 의심 지역" />
+											</div>
+										</div>
+										<div class="pageInfoItem">
+											<div class="tit">원인</div>
+											<div class="con">
+												<input type="text" value="택지조성" />
+											</div>
+										</div>
+										<div class="pageInfoItem">
+											<div class="tit">원인 세부현황</div>
+											<div class="con">
+												<input type="text" value="개발행위 의심되어  자치경찰 조사 중입니다." />
+											</div>
+										</div>
+									</li>
+									<!-- child : 하위 항목이 있을 경우 추가 -->
+									<li>
+										<div class="pageInfoItem">
+											<div class="tit">비고</div>
+											<div class="con">
+												<input type="text" value="비고내용" />
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="pageInfoWrap">
+							<!-- pageCommonTopArea : 공통 상단 영역 -->
+							<div class="pageCommonTopArea">
+								<div class="pageCommonTopLeft">
+									<div class="pageCommonTopTit">훼손지(복구중)</div>
+								</div>
+								<div class="pageCommonTopRight">
+									<button type="button" class="bLineType01 bDelete2" onclick="">
+										<span>삭제</span>
+									</button>
+									<button type="button" class="bModify3" onclick="">
+										<span>저장</span>
+									</button>
+								</div>
+							</div>
+							<div class="pageInfoArea">
+								<ul class="pageInfoList">
+									<!-- child : 하위 항목이 있을 경우 추가 -->
+									<li>
+										<div class="pageInfoItem">
+											<div class="tit">등록자</div>
+											<div class="con">
+												<div class="cFlex">
+													<input type="text" value="홍길동" />
+												</div>
+											</div>
+										</div>
+										<div class="pageInfoItem">
+											<div class="tit">등록일</div>
+											<div class="con">
+												<!-- cDateInput : 날짜 입력창 -->
+												<input type="text" class="cDateInput" value="2023-05-30" autocomplete="off" />
+											</div>
+										</div>
+										<div class="pageInfoItem">
+											<div class="tit">사건번호</div>
+											<div class="con">
+												<div class="cFlex">
+													<input type="text" value="2022-1077" />
+												</div>
+											</div>
+										</div>
+									</li>
+									<!-- child : 하위 항목이 있을 경우 추가 -->
+									<li>
+										<div class="pageInfoItem">
+											<div class="tit">구분</div>
+											<div class="con">
+												<input type="text" value="불법산지전용" />
+											</div>
+										</div>
+										<div class="pageInfoItem">
+											<div class="tit">원인</div>
+											<div class="con">
+												<input type="text" value="택지조성" />
+											</div>
+										</div>
+									</li>
+									<!-- child : 하위 항목이 있을 경우 추가 -->
+									<li>
+										<div class="pageInfoItem">
+											<div class="tit">원인 세부현황</div>
+											<div class="con">
+												<input type="text" value="임도개설, 개발행위 등" />
+											</div>
+										</div>
+										<div class="pageInfoItem">
+											<div class="tit">위반 적용 법(벌칙조항)</div>
+											<div class="con">
+												<input type="text" value="산지관리법제53조제1호" />
+											</div>
+										</div>
+										<div class="pageInfoItem">
+											<div class="tit">비고</div>
+											<div class="con">
+												<input type="text" value="비고내용" />
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="pageInfoWrap">
+							<!-- pageCommonTopArea : 공통 상단 영역 -->
+							<div class="pageCommonTopArea">
+								<div class="pageCommonTopLeft">
+									<div class="pageCommonTopTit">복구지</div>
+								</div>
+								<div class="pageCommonTopRight">
+									<button type="button" class="bLineType01 bDelete2" onclick="">
+										<span>삭제</span>
+									</button>
+									<button type="button" class="bModify3" onclick="">
+										<span>저장</span>
+									</button>
+								</div>
+							</div>
+							<div class="pageInfoArea">
+								<ul class="pageInfoList">
+									<!-- child : 하위 항목이 있을 경우 추가 -->
+									<li>
+										<div class="pageInfoItem">
+											<div class="tit">등록자</div>
+											<div class="con">
+												<div class="cFlex">
+													<input type="text" value="홍길동" />
+												</div>
+											</div>
+										</div>
+										<div class="pageInfoItem">
+											<div class="tit">등록일</div>
+											<div class="con">
+												<!-- cDateInput : 날짜 입력창 -->
+												<input type="text" class="cDateInput" value="2023-05-30" autocomplete="off" />
+											</div>
+										</div>
+										<div class="pageInfoItem">
+											<div class="tit">첨부파일<br />(준공도면)</div>
+											<div class="con">
+												<!-- cFileInput : 파일 선택창 -->
+												<div class="cFileInput">
+													<label>
+														<input type="file" />파일선택
+													</label>
+													<!-- cFileSelect : 파일을 선택했을 경우 추가 -->
+													<div class="cFileSelect">
+														<div class="cFileName">제주곶지왈도립공원준공도면.pdf</div>
+														<button type="button" class="cFileBtn" onclick="">
+															<span>파일 삭제</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<!-- child : 하위 항목이 있을 경우 추가 -->
+									<li>
+										<div class="pageInfoItem">
+											<div class="tit">훼손일시</div>
+											<div class="con">
+												<!-- cDateInput : 날짜 입력창 -->
+												<input type="text" class="cDateInput" value="2023-05-30" autocomplete="off" />
+											</div>
+										</div>
+										<div class="pageInfoItem">
+											<div class="tit">훼손 면적</div>
+											<div class="con">
+												<div class="cFlex">
+													<input type="text" value="267" />
+													<span class="unit">(㎡)</span>
+												</div>
+											</div>
+										</div>
+									</li>
+									<!-- child : 하위 항목이 있을 경우 추가 -->
+									<li class="child">
+										<div class="pageInfoItem">
+											<div class="tit">피해본수</div>
+											<ul class="childList">
+												<li>
+													<div class="pageInfoItem">
+														<div class="tit">수종</div>
+														<div class="con">
+															<div class="cFlex">
+																<input type="text" value="은행나무" />
+															</div>
+														</div>
+													</div>
+													<div class="pageInfoItem">
+														<div class="tit">흉고직경</div>
+														<div class="con">
+															<div class="cFlex">
+																<input type="text" value="267" />
+																<span class="unit">(cm)</span>
+															</div>
+														</div>
+													</div>
+													<div class="pageInfoItem">
+														<div class="tit">본수</div>
+														<div class="con">
+															<div class="cFlex">
+																<input type="text" />
+																<span class="unit">(본)</span>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<!-- child : 하위 항목이 있을 경우 추가 -->
+									<li class="child">
+										<div class="pageInfoItem">
+											<div class="tit">복구조림</div>
+											<ul class="childList">
+												<li>
+													<div class="pageInfoItem">
+														<div class="tit">수종</div>
+														<div class="con">
+															<div class="cFlex">
+																<input type="text" value="은행나무" />
+															</div>
+														</div>
+													</div>
+													<div class="pageInfoItem">
+														<div class="tit">흉고직경</div>
+														<div class="con">
+															<div class="cFlex">
+																<input type="text" value="267" />
+																<span class="unit">(cm)</span>
+															</div>
+														</div>
+													</div>
+													<div class="pageInfoItem">
+														<div class="tit">본수</div>
+														<div class="con">
+															<div class="cFlex">
+																<input type="text" />
+																<span class="unit">(본)</span>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<!-- child : 하위 항목이 있을 경우 추가 -->
+									<li>
+										<div class="pageInfoItem">
+											<div class="tit">피해 면적</div>
+											<div class="con">
+												<div class="cFlex">
+													<input type="text" value="267" />
+													<span class="unit">(㎡)</span>
+												</div>
+											</div>
+										</div>
+										<div class="pageInfoItem">
+											<div class="tit">경사지 복구면적</div>
+											<div class="con">
+												<div class="cFlex">
+													<input type="text" value="267" />
+													<span class="unit">(㎡)</span>
+												</div>
+											</div>
+										</div>
+										<div class="pageInfoItem">
+											<div class="tit">복구일시</div>
+											<div class="con">
+												<!-- cDateInput : 날짜 입력창 -->
+												<input type="text" class="cDateInput" value="2023-08-30" autocomplete="off" />
+											</div>
+										</div>
+									</li>
+									<!-- child : 하위 항목이 있을 경우 추가 -->
+									<li>
+										<div class="pageInfoItem longItem">
+											<div class="tit">비고</div>
+											<div class="con">
+												<input type="text" value="비고내용" />
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="cTableWrap mt40">
+							<!-- cTableBottomArea : 테이블 하단 영역 -->
+							<div class="cTableBottomArea">
+								<div class="cTableBottomRight">
+									<button type="button" class="bHeight03 bLineType03 bList" onclick="">
+										<span>목록</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</article>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
