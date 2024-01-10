@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>재배작물 관리 서비스</title>
+		<meta name="description" content="재배작물 관리 서비스">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=1400">
+		
+		<link href="../src/styles/css/font.css" type="text/css" rel="stylesheet">
+		<link href="../src/styles/css/style.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- 재배작물조회>지역조회>재배면적 신고 내역>변화추이 -->
+		<div class="wrap">
+			<!-- header -->
+			<header class="header">
+				<!-- hLogo : 헤더 로고 -->
+				<div class="hLogo">
+					<img src="../src/assets/images/img-logo-0.svg" alt="헤더 로고" />
+					<span>재배작물 관리 서비스</span>
+				</div>
+
+				<!-- nav -->
+				<nav class="nav">
+					<!-- nMenuList : 헤더 왼쪽 메뉴 -->
+					<ul class="nMenuList">
+						<!-- nMenu00 : 재배작물조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu00 on">
+							<a href="#">재배작물조회</a>
+						</li>
+						<!-- nMenu01 : 농지이용실태 조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu01">
+							<a href="#">농지이용실태 조회</a>
+						</li>
+						<!-- nMenu02 : 신고서 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu02">
+							<a href="#">신고서 관리</a>
+						</li>
+						<!-- nMenu03 : 신고자 명부 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu03">
+							<a href="#">신고자 명부 관리</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="hMenuArea">
+					<!-- hMenuList : 헤더 오른쪽 메뉴 -->
+					<ul class="hMenuList">
+						<li>
+							<div class="hMenuImg"><img src="../src/assets/images/icon-user-0.svg" alt="계정 아이콘" /></div>
+							<div class="hMenuTxt">홍길동<span>님</span></div>
+						</li>
+						<li>
+							<button type="button" class="bHeight01 bFillType01" onclick="">
+								<span>로그아웃</span>
+							</button>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-setting-0.svg" alt="관리자 아이콘" /></div>
+								<div class="hMenuTxt">관리자</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-home-1.svg" alt="홈 아이콘" /></div>
+								<div class="hMenuTxt">홈</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<!-- content -->
+			<div class="cWrap">
+				<!-- cMap : 지도 페이지 -->
+				<section class="cMap">
+					<!-- mapArea : 지도가 노출되는 영역, mapBackground01 : 지도 배경 예시 이미지 -->
+					<article class="mapArea mapBackground01"></article>
+
+					<!-- mapLayerArea : 지도 레이어창 영역 -->
+					<article class="mapLayerArea">
+						<!-- mapLayerLine00 : 첫번째 라인의 레이어창 영역 -->
+						<div class="mapLayerLine00">
+							<!-- 재배 작물 조회창, hide : 레이어창을 닫았을 경우 추가, mapLayerBig : 조회하는 레이어창일 경우 추가 -->
+							<div class="mapLayer mapLayerBig">
+								<!-- mapLayerTitArea : 레이어창 제목 영역 -->
+								<div class="mapLayerTitArea">
+									<div class="mapLayerTit">
+										<span>재배 작물 조회</span>
+									</div>
+									<button type="button" class="mapLayerTitBtn" onclick="">
+										<span>레이어창 버튼</span>
+									</button>
+								</div>
+								<!-- mapLayerConArea : 레이어창 내용 영역 -->
+								<div class="mapLayerConArea">
+									<div class="mlcTit">위치 선택</div>
+									<div class="mlcCon">
+										<div class="cRadio">
+											<input type="radio" id="radioItem0000" name="radioItem00" checked onchange="" />
+											<label for="radioItem0000">지역조회</label>
+										</div>
+										<div class="cRadio">
+											<input type="radio" id="radioItem0001" name="radioItem00" onchange="" />
+											<label for="radioItem0001">주소조회</label>
+										</div>
+										<!-- mlcResult : 위치 선택 결과 영역 -->
+										<div class="mlcResult">
+											<div class="cFlex">
+												<select>
+													<option value="서귀포시">서귀포시</option>
+													<option value="제주시">제주시</option>
+												</select>
+												<select>
+													<option value="">전체</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<!-- mlcResult : 위치 선택 결과 영역 -->
+									<div class="mlcResult">
+										<div class="mlcTit">작물 선택</div>
+										<div class="mlcCon">
+											<select>
+												<option value="">전체</option>
+												<option value="월동무">월동무</option>
+												<option value="당근">당근</option>
+												<option value="양배추">양배추</option>
+												<option value="브로콜리">브로콜리</option>
+												<option value="콜라비">콜라비</option>
+												<option value="적채">적채</option>
+												<option value="비트">비트</option>
+												<option value="쪽파">쪽파</option>
+												<option value="마늘">마늘</option>
+												<option value="월동배추">월동배추</option>
+												<option value="기타">기타</option>
+											</select>
+										</div>
+									</div>
+									<button type="button" class="bHeight04" onclick="">
+										<span>확인</span>
+									</button>
+								</div>
+							</div>
+
+							<!-- 재배작물 범례창, hide : 레이어창을 닫았을 경우 추가 -->
+							<div class="mapLayer">
+								<!-- mapLayerTitArea : 레이어창 제목 영역 -->
+								<div class="mapLayerTitArea">
+									<div class="mapLayerTit">
+										<img src="../src/assets/images/icon-list-0.svg" alt="재배작물 범례" />
+										<span>재배작물 범례</span>
+									</div>
+									<button type="button" class="mapLayerTitBtn" onclick="">
+										<span>레이어창 버튼</span>
+									</button>
+								</div>
+								<!-- mapLayerConArea : 레이어창 내용 영역 -->
+								<div class="mapLayerConArea">
+									<ul class="mlcList">
+										<!-- 20231130 Update Start -->
+										<li>
+											<div class="mlcLegend cColor00">월동무</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor01">당근</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor02">양배추</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor03">양파</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor04">브로콜리</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor05">콜라비</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor06">적채</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor07">비트</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor08">옥수수</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor09">감자</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor10">메밀</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor11">콩</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor12">기장</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor13">감귤</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor14">쪽파</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor15">마늘</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor16">월동배추</div>
+										</li>
+										<li>
+											<div class="mlcLegend cColor17">기타</div>
+										</li>
+										<!-- 20231130 Update End -->
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- mapLayerLine01 : 두번째 라인의 레이어창 영역 -->
+						<div class="mapLayerLine01">
+							<!-- 지도 레이어 설정창, hide : 레이어창을 닫았을 경우 추가 -->
+							<div class="mapLayer">
+								<!-- mapLayerTitArea : 레이어창 제목 영역 -->
+								<div class="mapLayerTitArea">
+									<div class="mapLayerTit">
+										<img src="../src/assets/images/icon-layer-0.svg" alt="지도 레이어 설정" />
+										<span>지도 레이어 설정</span>
+									</div>
+									<button type="button" class="mapLayerTitBtn" onclick="">
+										<span>레이어창 버튼</span>
+									</button>
+								</div>
+								<!-- mapLayerConArea : 레이어창 내용 영역 -->
+								<div class="mapLayerConArea">
+									<ul class="mlcList">
+										<li>
+											<div class="cCheckbox">
+												<input type="checkbox" id="checkboxItem00" checked />
+												<label for="checkboxItem00">AI 분석 결과</label>
+											</div>
+										</li>
+										<li>
+											<div class="cCheckbox">
+												<input type="checkbox" id="checkboxItem01" checked />
+												<label for="checkboxItem01">팜맵</label>
+											</div>
+										</li>
+										<li>
+											<div class="cCheckbox">
+												<input type="checkbox" id="checkboxItem02" />
+												<label for="checkboxItem02">연속지적도</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<!-- mapPositionArea : 지도 위치 검색창 영역 -->
+					<article class="mapPositionArea">
+						<ul class="mapPositionList">
+							<li>
+								<div class="mapPositionTit">제주특별자치도</div>
+							</li>
+							<!-- on : 셀렉트박스를 노출할 경우 추가 -->
+							<li>
+								<div class="mapPositionTit" onclick="">서귀포시</div>
+								<!-- mapPositionSelect : 지역 셀렉트창 (시군) -->
+								<ul class="mapPositionSelect">
+									<li onclick="">서귀포시</li>
+									<li onclick="">제주시</li>
+								</ul>
+							</li>
+							<!-- on : 셀렉트박스를 노출할 경우 추가 -->
+							<li>
+								<div class="mapPositionTit" onclick="">대정읍</div>
+								<!-- mapPositionSelect : 지역 셀렉트창 (읍/면/동) -->
+								<ul class="mapPositionSelect">
+									<li onclick="">강정동</li>
+									<li onclick="">남원읍</li>
+									<li onclick="">대륜동</li>
+									<li onclick="">대정읍</li>
+									<li onclick="">대천동</li>
+									<li onclick="">상예동</li>
+									<li onclick="">성산읍</li>
+									<li onclick="">하예동</li>
+									<li onclick="">표선면</li>
+									<li onclick="">토평동</li>
+								</ul>
+							</li>
+						</ul>
+					</article>
+
+					<!-- mapBtnArea : 지도 오른쪽 버튼 영역 -->
+					<article class="mapBtnArea">
+						<!-- mapBtnTypeList : 지도 타입 설정 -->
+						<ul class="mapBtnTypeList">
+							<!-- mapCommonType : 일반지도, on : 지도 타입을 선택했을 경우 추가 -->
+							<li class="mapCommonType on" onclick="">
+								<div class="mapBtnTypeImg"></div>
+								<div class="mapBtnTypeTxt">일반지도</div>
+							</li>
+							<!-- mapSatelliteType : 위성지도, on : 지도 타입을 선택했을 경우 추가 -->
+							<li class="mapSatelliteType" onclick="">
+								<div class="mapBtnTypeImg"></div>
+								<div class="mapBtnTypeTxt">위성지도</div>
+							</li>
+						</ul>
+
+						<!-- mapBtnZoomList : 지도 확대/축소 설정 -->
+						<ul class="mapBtnZoomList">
+							<!-- mapZoomIn : 지도 확대 -->
+							<li class="mapZoomIn" onclick=""></li>
+							<!-- mapZoomOut : 지도 축소 -->
+							<li class="mapZoomOut" onclick=""></li>
+						</ul>
+
+						<!-- mapBtnFuncList : 지도 기능 설정 -->
+						<ul class="mapBtnFunList">
+							<!-- mapDistance : 거리재기 -->
+							<li class="mapDistance" onclick=""></li>
+							<!-- mapExtent : 면적재기 -->
+							<li class="mapExtent" onclick=""></li>
+							<!-- mapPrint : 인쇄 -->
+							<li class="mapPrint" onclick=""></li>
+						</ul>
+					</article>
+
+					<!-- mapInfoArea : 지도 정보창 영역, on : 정보창을 열었을 경우 추가, hide : 정보창을 접을 경우 추가 -->
+					<article class="mapInfoArea on">
+						<button type="button" class="mapInfoBtn" onclick="">
+							<span>정보창 버튼</span>
+						</button>
+
+						<!-- mapInfoDetailBox : 상세창일 경우 추가 -->
+						<div class="mapInfoBox">
+							<!-- mapInfoTitArea : 정보창 제목 영역, mapInfoBackTitArea : 뒤로가기 버튼이 있을 경우 추가 -->
+							<div class="mapInfoTitArea">
+								<div class="mapInfoTitItem">
+									<span class="cChipFill00">위치</span>서귀포시
+								</div>
+								<div class="mapInfoTitItem">
+									<span class="cChipFill03">작물</span>전체
+								</div>
+								<button type="button" class="mapInfoCloseBtn" onclick="">
+									<span>정보창 닫기 버튼</span>
+								</button>
+							</div>
+
+							<!-- mapInfoTabArea : 정보창 탭 영역 -->
+							<div class="mapInfoTabArea">
+								<!-- cTabList : 탭 영역 -->
+								<ul class="cTabList">
+									<!-- on : 탭을 선택했을 경우 추가 -->
+									<li onclick="">AI 분석결과</li>
+									<!-- on : 탭을 선택했을 경우 추가 -->
+									<li class="on" onclick="">재배면적 신고 내역</li>
+								</ul>
+							</div>
+
+							<!-- mapInfoConArea : 정보창 내용 영역 -->
+							<div class="mapInfoConArea">
+								<div class="micTabArea">
+									<!-- cBtnTabList : 버튼타입의 탭 영역 -->
+									<ul class="cBtnTabList">
+										<!-- on : 탭을 선택했을 경우 추가 -->
+										<li onclick="">2022</li>
+										<!-- on : 탭을 선택했을 경우 추가 -->
+										<li onclick="">2021</li>
+										<!-- on : 탭을 선택했을 경우 추가, blueItem : 변화추이 탭일 경우 추가 -->
+										<li class="blueItem on" onclick="">변화추이</li>
+									</ul>
+								</div>
+
+								<div class="micMainArea">									
+									<div class="micChartWrap">
+										<!-- micChartArea : 정보창 차트 영역 -->
+										<div class="micChartArea">
+											<!-- micChart : 차트가 노출되는 영역 -->
+											<div class="micChart">차트가 노출되는 영역</div>
+										</div>
+									</div>
+
+									<div class="cListTableWrap pt40">
+										<!-- cTableTopArea : 테이블 상단 영역 -->
+										<div class="cTableTopArea">
+											<div class="cTableTopLeft">
+												<div class="cTableTopTit">연도별 변화추이</div>
+											</div>
+										</div>
+										<!-- cTableEtcArea : 테이블 기타 영역 -->
+										<div class="cTableEtcArea">
+											<div class="cRadio">
+												<input type="radio" id="radioItem0100" name="radioItem01" checked onchange="" />
+												<label for="radioItem0100">면적별</label>
+											</div>
+											<div class="cRadio">
+												<input type="radio" id="radioItem0101" name="radioItem01" onchange="" />
+												<label for="radioItem0101">건수별</label>
+											</div>
+										</div>
+										<!-- cListTableArea : 목록 테이블 영역 -->
+										<div class="cListTableArea">
+											<table class="cListTable">
+												<caption class="not-view">재배 작물 조회시 재배면적 신고 내역의 연도별 변화추이 목록</caption>
+												<colgroup>
+													<col width="120" />
+													<col width="*" />
+													<col width="*" />
+													<col width="*" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">작물이름</th>
+														<th scope="col">2020</th>
+														<th scope="col">2021</th>
+														<th scope="col">2022</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">월동무</th>
+														<td>139,251</td>
+														<td>5,875,694</td>
+														<td>139,251</td>
+													</tr>
+													<tr>
+														<th scope="row">당근</th>
+														<td>139,251</td>
+														<td>5,875,694</td>
+														<td>139,251</td>
+													</tr>
+													<tr>
+														<th scope="row">브로콜리</th>
+														<td>139,251</td>
+														<td>5,875,694</td>
+														<td>139,251</td>
+													</tr>
+													<tr>
+														<th scope="row">콜라비</th>
+														<td>139,251</td>
+														<td>5,875,694</td>
+														<td>139,251</td>
+													</tr>
+													<tr>
+														<th scope="row">적채</th>
+														<td>139,251</td>
+														<td>5,875,694</td>
+														<td>139,251</td>
+													</tr>
+													<tr>
+														<th scope="row">비트</th>
+														<td>139,251</td>
+														<td>5,875,694</td>
+														<td>139,251</td>
+													</tr>
+													<tr>
+														<th scope="row">쪽파</th>
+														<td>139,251</td>
+														<td>5,875,694</td>
+														<td>139,251</td>
+													</tr>
+													<tr>
+														<th scope="row">월동배추</th>
+														<td>139,251</td>
+														<td>5,875,694</td>
+														<td>139,251</td>
+													</tr>
+													<tr>
+														<th scope="row">양파</th>
+														<td>139,251</td>
+														<td>5,875,694</td>
+														<td>139,251</td>
+													</tr>
+													<tr>
+														<th scope="row">마늘</th>
+														<td>139,251</td>
+														<td>5,875,694</td>
+														<td>139,251</td>
+													</tr>
+													<tr>
+														<th scope="row">기타</th>
+														<td>139,251</td>
+														<td>5,875,694</td>
+														<td>139,251</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- mapInfoGotopBtn : 정보창 맨위로가기 버튼 -->
+							<button type="button" class="mapInfoGotopBtn" onclick="">
+								<span>정보창 맨위로가기 버튼</span>
+							</button>
+						</div>
+					</article>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

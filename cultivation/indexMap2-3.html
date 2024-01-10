@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>재배작물 관리 서비스</title>
+		<meta name="description" content="재배작물 관리 서비스">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=1400">
+		
+		<link href="../src/styles/css/font.css" type="text/css" rel="stylesheet">
+		<link href="../src/styles/css/style.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- 농지이용실태 조회>주소조회>상세>촬영 영상 자세히 보기 -->
+		<div class="wrap">
+			<!-- header -->
+			<header class="header">
+				<!-- hLogo : 헤더 로고 -->
+				<div class="hLogo">
+					<img src="../src/assets/images/img-logo-0.svg" alt="헤더 로고" />
+					<span>재배작물 관리 서비스</span>
+				</div>
+
+				<!-- nav -->
+				<nav class="nav">
+					<!-- nMenuList : 헤더 왼쪽 메뉴 -->
+					<ul class="nMenuList">
+						<!-- nMenu00 : 재배작물조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu00">
+							<a href="#">재배작물조회</a>
+						</li>
+						<!-- nMenu01 : 농지이용실태 조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu01 on">
+							<a href="#">농지이용실태 조회</a>
+						</li>
+						<!-- nMenu02 : 신고서 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu02">
+							<a href="#">신고서 관리</a>
+						</li>
+						<!-- nMenu03 : 신고자 명부 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu03">
+							<a href="#">신고자 명부 관리</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="hMenuArea">
+					<!-- hMenuList : 헤더 오른쪽 메뉴 -->
+					<ul class="hMenuList">
+						<li>
+							<div class="hMenuImg"><img src="../src/assets/images/icon-user-0.svg" alt="계정 아이콘" /></div>
+							<div class="hMenuTxt">홍길동<span>님</span></div>
+						</li>
+						<li>
+							<button type="button" class="bHeight01 bFillType01" onclick="">
+								<span>로그아웃</span>
+							</button>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-setting-0.svg" alt="관리자 아이콘" /></div>
+								<div class="hMenuTxt">관리자</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-home-1.svg" alt="홈 아이콘" /></div>
+								<div class="hMenuTxt">홈</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<!-- content -->
+			<div class="cWrap">
+				<!-- cMap : 지도 페이지 -->
+				<section class="cMap">
+					<!-- mapArea : 지도가 노출되는 영역, mapBackground06 : 지도 배경 예시 이미지 -->
+					<article class="mapArea mapBackground06"></article>
+
+					<!-- mapLayerArea : 지도 레이어창 영역 -->
+					<article class="mapLayerArea">
+						<!-- mapLayerLine00 : 첫번째 라인의 레이어창 영역 -->
+						<div class="mapLayerLine00">
+							<!-- 촬영 영상 선택, hide : 레이어창을 닫았을 경우 추가, mapLayerMedium : 촬영 영상 선택창일 경우 추가 -->
+							<div class="mapLayer mapLayerMedium">
+								<!-- mapLayerTitArea : 레이어창 제목 영역 -->
+								<div class="mapLayerTitArea">
+									<div class="mapLayerTit">
+										<img src="../src/assets/images/icon-camera-0.svg" alt="촬영 영상 선택" />
+										<span>촬영 영상 선택</span>
+									</div>
+									<button type="button" class="mapLayerTitBtn" onclick="">
+										<span>레이어창 버튼</span>
+									</button>
+								</div>
+								<!-- mapLayerConArea : 레이어창 내용 영역 -->
+								<div class="mapLayerConArea">
+									<ul class="mlcList">
+										<li>
+											<div class="cRadio">
+												<input type="radio" id="radioItem0000" name="radioItem00" checked />
+												<label for="radioItem0000"><span class="cChipFill01">위성</span>2022년 5월 30일</label>
+											</div>
+										</li>
+										<li>
+											<div class="cRadio">
+												<input type="radio" id="radioItem0001" name="radioItem00" />
+												<label for="radioItem0001"><span class="cChipFill01">드론</span>2021년 8월 30일</label>
+											</div>
+										</li>
+										<li>
+											<div class="cRadio">
+												<input type="radio" id="radioItem0002" name="radioItem00" />
+												<label for="radioItem0002"><span class="cChipFill01">항공</span>2021년 7월 30일</label>
+											</div>
+										</li>
+										<li>
+											<div class="cRadio">
+												<input type="radio" id="radioItem0003" name="radioItem00" />
+												<label for="radioItem0003"><span class="cChipFill01">드론</span>2021년 7월 30일</label>
+											</div>
+										</li>
+										<li>
+											<div class="cRadio">
+												<input type="radio" id="radioItem0004" name="radioItem00" />
+												<label for="radioItem0004"><span class="cChipFill01">드론</span>2021년 6월 30일</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<!-- mapBtnArea : 지도 오른쪽 버튼 영역 -->
+					<article class="mapBtnArea">
+						<!-- mapBtnCommonList : 일반적인 버튼 노출 -->
+						<ul class="mapBtnCommonList">
+							<li>
+								<button type="button" class="bLineType04 bPrint" onclick="">
+									<span>인쇄</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="bLineType04 bClose" onclick="">
+									<span>닫기</span>
+								</button>
+							</li>
+						</ul>
+					</article>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
