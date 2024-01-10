@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>해양쓰레기 관리 서비스</title>
+		<meta name="description" content="해양쓰레기 관리 서비스">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=1400">
+		
+		<link href="../src/styles/css/font.css" type="text/css" rel="stylesheet">
+		<link href="../src/styles/css/style.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- 해양쓰레기조회>AI탐지조회 -->
+		<div class="wrap">
+			<!-- header -->
+			<header class="header">
+				<!-- hLogo : 헤더 로고 -->
+				<div class="hLogo">
+					<img src="../src/assets/images/img-logo-0.svg" alt="헤더 로고" />
+					<span>해양쓰레기 관리 서비스</span>
+				</div>
+
+				<!-- nav -->
+				<nav class="nav">
+					<!-- nMenuList : 헤더 왼쪽 메뉴 -->
+					<ul class="nMenuList">
+						<!-- nMenu04 : 해양쓰레기 조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu04 on">
+							<a href="#">해양쓰레기 조회</a>
+						</li>
+						<!-- nMenu05 : 쓰레기 수거 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu05">
+							<a href="#">쓰레기 수거 관리</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="hMenuArea">
+					<!-- hMenuList : 헤더 오른쪽 메뉴 -->
+					<ul class="hMenuList">
+						<li>
+							<div class="hMenuImg"><img src="../src/assets/images/icon-user-0.svg" alt="계정 아이콘" /></div>
+							<div class="hMenuTxt">홍길동<span>님</span></div>
+						</li>
+						<li>
+							<button type="button" class="bHeight01 bFillType01" onclick="">
+								<span>로그아웃</span>
+							</button>
+						</li>
+						<!-- on : 알림창을 노출할 경우 추가 -->
+						<li>
+							<!-- hMenuTit : 알림 메뉴명 -->
+							<div class="hMenuTit" onclick="">
+								<div class="hMenuImg">
+									<img src="../src/assets/images/icon-bell-0.svg" alt="알림 아이콘" />
+									<!-- hMenuCnt : 알림 개수 -->
+									<span class="hMenuCnt">5</span>
+								</div>
+								<div class="hMenuTxt">알림</div>
+							</div>
+							<!-- hMenuLayer : 알림창 -->
+							<div class="hMenuLayer">
+								<!-- cTableTopArea : 테이블 상단 영역 -->
+								<div class="cTableTopArea">
+									<div class="cTableTopLeft">
+										<div class="cTableTopTit">탐지 알림</div>
+										<ul class="cTableTopData">
+											<!-- num : 숫자일 경우 추가 -->
+											<li>총 <span class="num">12</span> 건</li>
+										</ul>
+									</div>
+									<div class="cTableTopRight">
+										<button type="button" class="bClose2" onclick="">
+											<span>알림창 닫기</span>
+										</button>
+									</div>
+								</div>
+								<!-- cListTableArea : 목록 테이블 영역 -->
+								<div class="cListTableArea">
+									<table class="cListTable">
+										<caption class="not-view">해양쓰레기 관리 서비스의 탐지 알림 목록</caption>
+										<colgroup>
+											<col width="48" />
+											<col width="*" />
+											<col width="80" />
+											<col width="14" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">위치</th>
+												<th scope="col">주소</th>
+												<th scope="col">면적(㎡)</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr>
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr class="ok">
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr>
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr>
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- cPagingArea : 페이징 영역 -->
+								<div class="cPagingArea">
+									<ul class="cPagingList">
+										<!-- firstArrow : 맨 처음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow firstArrow">
+											<a href="#"></a>
+										</li>
+										<!-- prevArrow : 이전페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow prevArrow">
+											<a href="#"></a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li class="on">
+											<a href="#">1</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">2</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">3</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">4</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">5</a>
+										</li>
+										<!-- nextArrow : 다음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow nextArrow">
+											<a href="#"></a>
+										</li>
+										<!-- lastArrow : 맨 마지막페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow lastArrow">
+											<a href="#"></a>
+										</li>
+									</ul>
+								</div>
+								<!-- cTableBottomArea : 테이블 하단 영역 -->
+								<div class="cTableBottomArea">
+									<div class="cTableBottomRight">
+										<button type="button" class="bLineType01" onclick="">
+											<span>전체 알림삭제</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-setting-0.svg" alt="관리자 아이콘" /></div>
+								<div class="hMenuTxt">관리자</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-home-1.svg" alt="홈 아이콘" /></div>
+								<div class="hMenuTxt">홈</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<!-- content -->
+			<div class="cWrap">
+				<!-- cMap : 지도 페이지 -->
+				<section class="cMap">
+					<!-- mapArea : 지도가 노출되는 영역, mapBackground08 : 지도 배경 예시 이미지 -->
+					<article class="mapArea mapBackground08"></article>
+
+					<!-- mapLayerArea : 지도 레이어창 영역 -->
+					<article class="mapLayerArea">
+						<!-- mapLayerLine00 : 첫번째 라인의 레이어창 영역 -->
+						<div class="mapLayerLine00">
+							<!-- 해양 쓰레기 조회, hide : 레이어창을 닫았을 경우 추가, mapLayerBig : 조회하는 레이어창일 경우 추가 -->
+							<div class="mapLayer mapLayerBig">
+								<!-- mapLayerTitArea : 레이어창 제목 영역 -->
+								<div class="mapLayerTitArea">
+									<div class="mapLayerTit">
+										<span>해양 쓰레기 조회</span>
+									</div>
+									<button type="button" class="mapLayerTitBtn" onclick="">
+										<span>레이어창 버튼</span>
+									</button>
+								</div>
+								<!-- mapLayerConArea : 레이어창 내용 영역 -->
+								<div class="mapLayerConArea">
+									<div class="mlcTit">위치 선택</div>
+									<div class="mlcCon">
+										<div class="cRadio">
+											<input type="radio" id="radioItem0000" name="radioItem00" checked onchange="" />
+											<label for="radioItem0000">AI 탐지 조회</label>
+										</div>
+										<div class="cRadio">
+											<input type="radio" id="radioItem0001" name="radioItem00" onchange="" />
+											<label for="radioItem0001">수거량 조회</label>
+										</div>
+										<!-- mlcResult : 위치 선택 결과 영역 -->
+										<div class="mlcResult">
+											<div class="cFlex">
+												<select>
+													<option value="서귀포시">서귀포시</option>
+													<option value="제주시">제주시</option>
+												</select>
+												<select>
+													<option value="">전체</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="mlcTit">기간 선택</div>
+									<div class="mlcCon">
+										<!-- mlcResult : 위치 선택 결과 영역 -->
+										<div class="mlcResult">
+											<div class="cFlex">
+												<select>
+													<option value="2022">2022</option>
+												</select>
+												<!-- cDateInput : 날짜 입력창 -->
+												<input type="text" class="cDateInput" value="01-01" autocomplete="off" />
+												<span>~</span>
+												<!-- cDateInput : 날짜 입력창 -->
+												<input type="text" class="cDateInput" value="12-31" autocomplete="off" />
+											</div>
+										</div>
+									</div>
+									<button type="button" class="bHeight04" onclick="">
+										<span>확인</span>
+									</button>
+								</div>
+							</div>
+
+							<!-- 범례창, hide : 레이어창을 닫았을 경우 추가, mapLayerLegend : 범례창일 경우 추가 -->
+							<div class="mapLayer mapLayerLegend">
+								<!-- mapLayerTitArea : 레이어창 제목 영역 -->
+								<div class="mapLayerTitArea">
+									<div class="mapLayerTit">
+										<span>범례</span>
+									</div>
+								</div>
+								<!-- mapLayerConArea : 레이어창 내용 영역 -->
+								<div class="mapLayerConArea">
+									<div class="mlcLegendBar">
+										<img src="../src/assets/images/img-barcolor-0.svg" alt="범례 바" />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- mapLayerLine01 : 두번째 라인의 레이어창 영역 -->
+						<div class="mapLayerLine01">
+							<!-- 지도 레이어 설정창, hide : 레이어창을 닫았을 경우 추가 -->
+							<div class="mapLayer">
+								<!-- mapLayerTitArea : 레이어창 제목 영역 -->
+								<div class="mapLayerTitArea">
+									<div class="mapLayerTit">
+										<img src="../src/assets/images/icon-layer-0.svg" alt="지도 레이어 설정" />
+										<span>지도 레이어 설정</span>
+									</div>
+									<button type="button" class="mapLayerTitBtn" onclick="">
+										<span>레이어창 버튼</span>
+									</button>
+								</div>
+								<!-- mapLayerConArea : 레이어창 내용 영역 -->
+								<div class="mapLayerConArea">
+									<ul class="mlcList">
+										<li>
+											<div class="cCheckbox">
+												<input type="checkbox" id="checkboxItem00" checked />
+												<label for="checkboxItem00">AI 분석 결과</label>
+											</div>
+											<ul>
+												<li>
+													<div class="cCheckbox">
+														<input type="checkbox" id="checkboxItem0000" checked />
+														<label for="checkboxItem0000">제주 동부</label>
+													</div>
+												</li>
+												<li>
+													<div class="cCheckbox">
+														<input type="checkbox" id="checkboxItem0001" checked />
+														<label for="checkboxItem0001">해양쓰레기 탐지</label>
+													</div>
+												</li>
+												<li>
+													<div class="cCheckbox">
+														<input type="checkbox" id="checkboxItem0002" />
+														<label for="checkboxItem0002">제주 동부</label>
+													</div>
+												</li>
+												<li>
+													<div class="cCheckbox">
+														<input type="checkbox" id="checkboxItem0003" />
+														<label for="checkboxItem0003">해양쓰레기 탐지</label>
+													</div>
+												</li>
+												<li>
+													<div class="cCheckbox">
+														<input type="checkbox" id="checkboxItem0004" />
+														<label for="checkboxItem0004">제주 동부</label>
+													</div>
+												</li>
+												<li>
+													<div class="cCheckbox">
+														<input type="checkbox" id="checkboxItem0005" />
+														<label for="checkboxItem0005">해양쓰레기 탐지</label>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="cCheckbox">
+												<input type="checkbox" id="checkboxItem01" />
+												<label for="checkboxItem01">연속지적도</label>
+											</div>
+										</li>
+										<li>
+											<div class="cCheckbox">
+												<input type="checkbox" id="checkboxItem02" />
+												<label for="checkboxItem02">히트맵</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<!-- mapPositionArea : 지도 위치 검색창 영역 -->
+					<article class="mapPositionArea">
+						<ul class="mapPositionList">
+							<li>
+								<div class="mapPositionTit">제주특별자치도</div>
+							</li>
+							<!-- on : 셀렉트박스를 노출할 경우 추가 -->
+							<li>
+								<div class="mapPositionTit" onclick="">서귀포시</div>
+								<!-- mapPositionSelect : 지역 셀렉트창 (시군) -->
+								<ul class="mapPositionSelect">
+									<li onclick="">서귀포시</li>
+									<li onclick="">제주시</li>
+								</ul>
+							</li>
+							<!-- on : 셀렉트박스를 노출할 경우 추가 -->
+							<li>
+								<div class="mapPositionTit" onclick="">대정읍</div>
+								<!-- mapPositionSelect : 지역 셀렉트창 (읍/면/동) -->
+								<ul class="mapPositionSelect">
+									<li onclick="">강정동</li>
+									<li onclick="">남원읍</li>
+									<li onclick="">대륜동</li>
+									<li onclick="">대정읍</li>
+									<li onclick="">대천동</li>
+									<li onclick="">상예동</li>
+									<li onclick="">성산읍</li>
+									<li onclick="">하예동</li>
+									<li onclick="">표선면</li>
+									<li onclick="">토평동</li>
+								</ul>
+							</li>
+						</ul>
+					</article>
+
+					<!-- mapBtnArea : 지도 오른쪽 버튼 영역 -->
+					<article class="mapBtnArea">
+						<!-- mapBtnTypeList : 지도 타입 설정 -->
+						<ul class="mapBtnTypeList">
+							<!-- mapCommonType : 일반지도, on : 지도 타입을 선택했을 경우 추가 -->
+							<li class="mapCommonType on" onclick="">
+								<div class="mapBtnTypeImg"></div>
+								<div class="mapBtnTypeTxt">일반지도</div>
+							</li>
+							<!-- mapSatelliteType : 위성지도, on : 지도 타입을 선택했을 경우 추가 -->
+							<li class="mapSatelliteType" onclick="">
+								<div class="mapBtnTypeImg"></div>
+								<div class="mapBtnTypeTxt">위성지도</div>
+							</li>
+						</ul>
+
+						<!-- mapBtnZoomList : 지도 확대/축소 설정 -->
+						<ul class="mapBtnZoomList">
+							<!-- mapZoomIn : 지도 확대 -->
+							<li class="mapZoomIn" onclick=""></li>
+							<!-- mapZoomOut : 지도 축소 -->
+							<li class="mapZoomOut" onclick=""></li>
+						</ul>
+
+						<!-- mapBtnFuncList : 지도 기능 설정 -->
+						<ul class="mapBtnFunList">
+							<!-- mapDistance : 거리재기 -->
+							<li class="mapDistance" onclick=""></li>
+							<!-- mapExtent : 면적재기 -->
+							<li class="mapExtent" onclick=""></li>
+							<!-- mapPrint : 인쇄 -->
+							<li class="mapPrint" onclick=""></li>
+						</ul>
+					</article>
+
+					<!-- mapInfoArea : 지도 정보창 영역, on : 정보창을 열었을 경우 추가, hide : 정보창을 접을 경우 추가 -->
+					<article class="mapInfoArea on">
+						<button type="button" class="mapInfoBtn" onclick="">
+							<span>정보창 버튼</span>
+						</button>
+
+						<!-- mapInfoDetailBox : 상세창일 경우 추가 -->
+						<div class="mapInfoBox">
+							<!-- mapInfoTitArea : 정보창 제목 영역, mapInfoBackTitArea : 뒤로가기 버튼이 있을 경우 추가 -->
+							<div class="mapInfoTitArea">
+								<div class="mapInfoTitItem">
+									<span class="cChipFill00">위치</span>서귀포시
+								</div>
+								<div class="mapInfoTitItem">
+									<span class="cChipFill03">기간</span><span class="num">2022.01 ~ 2022.12</span>
+								</div>
+								<button type="button" class="mapInfoCloseBtn" onclick="">
+									<span>정보창 닫기 버튼</span>
+								</button>
+							</div>
+
+							<!-- mapInfoConArea : 정보창 내용 영역 -->
+							<div class="mapInfoConArea">
+								<div class="micMainArea">									
+									<div class="micChartWrap">
+										<!-- micCommonTopArea : 공통 상단 영역 -->
+										<div class="micCommonTopArea">
+											<div class="micCommonTopLeft">
+												<div class="micCommonTopTit">조회 결과</div>
+											</div>
+											<div class="micCommonTopRight">
+												<ul class="micCommonTopData">
+													<!-- num : 숫자일 경우 추가 -->
+													<li>총 <span class="num">15,354</span> 건</li>
+													<!-- num : 숫자일 경우 추가 -->
+													<li>총 면적 <span class="num">108,904,705.32</span>㎡</li>
+												</ul>
+											</div>
+										</div>
+										<!-- micChartArea : 정보창 차트 영역 -->
+										<div class="micChartArea">
+											<!-- micChart : 차트가 노출되는 영역 -->
+											<div class="micChart">차트가 노출되는 영역</div>
+										</div>
+									</div>
+
+									<div class="cListTableWrap">
+										<!-- cTableTopArea : 테이블 상단 영역 -->
+										<!-- <div class="cTableTopArea">
+											<div class="cTableTopRight">
+												<button type="button" class="bLineType05 bDownload" onclick="">
+													<span>엑셀 다운로드</span>
+												</button>
+											</div>
+										</div> -->
+										<!-- cListTableArea : 목록 테이블 영역 -->
+										<div class="cListTableArea">
+											<table class="cListTable">
+												<caption class="not-view">해양 쓰레기 조회시 AI 탐지 조회의 지역별 목록</caption>
+												<colgroup>
+													<col width="140" />
+													<col width="120" />
+													<col width="*" />
+													<col width="120" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">지역</th>
+														<th scope="col">신뢰도(%)</th>
+														<th scope="col">검출면적(㎡)</th>
+														<th scope="col">검출건수(건)</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">대정읍</th>
+														<td>88</td>
+														<td>5,875,694</td>
+														<td>11건</td>
+													</tr>
+													<tr>
+														<th scope="row">안덕면</th>
+														<td>88</td>
+														<td>5,875,694</td>
+														<td>11건</td>
+													</tr>
+													<tr>
+														<th scope="row">표선면</th>
+														<td>80</td>
+														<td>5,875,694</td>
+														<td>8건</td>
+													</tr>
+													<tr>
+														<th scope="row">중문동</th>
+														<td>78</td>
+														<td>5,875,694</td>
+														<td>9건</td>
+													</tr>
+													<tr>
+														<th scope="row">남원읍</th>
+														<td>78</td>
+														<td>5,875,694</td>
+														<td>9건</td>
+													</tr>
+													<tr>
+														<th scope="row">성산읍</th>
+														<td>78</td>
+														<td>5,875,694</td>
+														<td>9건</td>
+													</tr>
+													<tr>
+														<th scope="row">송산동</th>
+														<td>78</td>
+														<td>5,875,694</td>
+														<td>9건</td>
+													</tr>
+													<tr>
+														<th scope="row">천지동</th>
+														<td>78</td>
+														<td>5,875,694</td>
+														<td>9건</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<!-- 20231220 Update Start -->
+									<div class="cListTableWrap">
+										<!-- cTableTopArea : 테이블 상단 영역 -->
+										<div class="cTableTopArea">
+											<div class="cTableTopLeft">
+												<div class="cTableTopTit">상세목록</div>
+												<div class="cTableTopLabel">
+													<select>
+														<option value="10">10</option>
+													</select>
+													<span class="labelTxt">개</span>
+												</div>
+												<div class="cTableTopLabel">
+													<label for="">유형</label>
+													<select>
+														<option value="">전체</option>
+													</select>
+												</div>
+											</div>
+											<div class="cTableTopRight">
+												<button type="button" class="bLineType05 bDownload" onclick="">
+													<span>엑셀 다운로드</span>
+												</button>
+											</div>
+										</div>
+										<!-- cListTableArea : 목록 테이블 영역 -->
+										<div class="cListTableArea">
+											<table class="cListTable">
+												<caption class="not-view">해양 쓰레기 조회시 상세 목록</caption>
+												<colgroup>
+													<col width="56" />
+													<col width="*" />
+													<col width="100" />
+													<col width="100" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">위치</th>
+														<th scope="col">주소</th>
+														<th scope="col">면적(㎡)</th>
+														<th scope="col">신뢰도(%)</th>
+													</tr>
+												</thead>
+												<tbody>
+													<!-- on : 해당 항목의 위치를 확인할 경우 추가 -->
+													<tr>
+														<td>
+															<button type="button" class="bLocation" onclick="">
+																<span>위치보기</span>
+															</button>
+														</td>
+														<td class="cLeft">제주시 외이도동</td>
+														<td>1735</td>
+														<td>85</td>
+													</tr>
+													<!-- on : 해당 항목의 위치를 확인할 경우 추가 -->
+													<tr>
+														<td>
+															<button type="button" class="bLocation" onclick="">
+																<span>위치보기</span>
+															</button>
+														</td>
+														<td class="cLeft">제주시 외이도동</td>
+														<td>1735</td>
+														<td>85</td>
+													</tr>
+													<!-- on : 해당 항목의 위치를 확인할 경우 추가 -->
+													<tr>
+														<td>
+															<button type="button" class="bLocation" onclick="">
+																<span>위치보기</span>
+															</button>
+														</td>
+														<td class="cLeft">제주시 외이도동</td>
+														<td>1735</td>
+														<td>85</td>
+													</tr>
+													<!-- on : 해당 항목의 위치를 확인할 경우 추가 -->
+													<tr>
+														<td>
+															<button type="button" class="bLocation" onclick="">
+																<span>위치보기</span>
+															</button>
+														</td>
+														<td class="cLeft">제주시 외이도동</td>
+														<td>1735</td>
+														<td>85</td>
+													</tr>
+													<!-- on : 해당 항목의 위치를 확인할 경우 추가 -->
+													<tr>
+														<td>
+															<button type="button" class="bLocation" onclick="">
+																<span>위치보기</span>
+															</button>
+														</td>
+														<td class="cLeft">제주시 외이도동</td>
+														<td>1735</td>
+														<td>85</td>
+													</tr>
+													<!-- on : 해당 항목의 위치를 확인할 경우 추가 -->
+													<tr>
+														<td>
+															<button type="button" class="bLocation" onclick="">
+																<span>위치보기</span>
+															</button>
+														</td>
+														<td class="cLeft">제주시 외이도동</td>
+														<td>1735</td>
+														<td>85</td>
+													</tr>
+													<!-- on : 해당 항목의 위치를 확인할 경우 추가 -->
+													<tr>
+														<td>
+															<button type="button" class="bLocation" onclick="">
+																<span>위치보기</span>
+															</button>
+														</td>
+														<td class="cLeft">제주시 외이도동</td>
+														<td>1735</td>
+														<td>85</td>
+													</tr>
+													<!-- on : 해당 항목의 위치를 확인할 경우 추가 -->
+													<tr>
+														<td>
+															<button type="button" class="bLocation" onclick="">
+																<span>위치보기</span>
+															</button>
+														</td>
+														<td class="cLeft">제주시 외이도동</td>
+														<td>1735</td>
+														<td>85</td>
+													</tr>
+													<!-- on : 해당 항목의 위치를 확인할 경우 추가 -->
+													<tr>
+														<td>
+															<button type="button" class="bLocation" onclick="">
+																<span>위치보기</span>
+															</button>
+														</td>
+														<td class="cLeft">제주시 외이도동</td>
+														<td>1735</td>
+														<td>85</td>
+													</tr>
+													<!-- on : 해당 항목의 위치를 확인할 경우 추가 -->
+													<tr>
+														<td>
+															<button type="button" class="bLocation" onclick="">
+																<span>위치보기</span>
+															</button>
+														</td>
+														<td class="cLeft">제주시 외이도동</td>
+														<td>1735</td>
+														<td>85</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!-- cPagingArea : 페이징 영역 -->
+										<div class="cPagingArea">
+											<ul class="cPagingList">
+												<!-- firstArrow : 맨 처음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+												<li class="arrow firstArrow">
+													<a href="#"></a>
+												</li>
+												<!-- prevArrow : 이전페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+												<li class="arrow prevArrow">
+													<a href="#"></a>
+												</li>
+												<!-- on : 현재 페이지일 경우 추가 -->
+												<li class="on">
+													<a href="#">1</a>
+												</li>
+												<!-- on : 현재 페이지일 경우 추가 -->
+												<li>
+													<a href="#">2</a>
+												</li>
+												<!-- on : 현재 페이지일 경우 추가 -->
+												<li>
+													<a href="#">3</a>
+												</li>
+												<!-- on : 현재 페이지일 경우 추가 -->
+												<li>
+													<a href="#">4</a>
+												</li>
+												<!-- on : 현재 페이지일 경우 추가 -->
+												<li>
+													<a href="#">5</a>
+												</li>
+												<!-- shortNum : 페이징 번호가 많을 경우 노출함, disabled : 비활성화일 경우 추가 -->
+												<li class="shortNum disabled">
+													<a href="#">...</a>
+												</li>
+												<!-- on : 현재 페이지일 경우 추가 -->
+												<li>
+													<a href="#">38</a>
+												</li>
+												<!-- nextArrow : 다음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+												<li class="arrow nextArrow">
+													<a href="#"></a>
+												</li>
+												<!-- lastArrow : 맨 마지막페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+												<li class="arrow lastArrow">
+													<a href="#"></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- 20231220 Update End -->
+								</div>
+							</div>
+						</div>
+					</article>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
