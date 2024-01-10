@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>재배작물 관리 서비스</title>
+		<meta name="description" content="재배작물 관리 서비스">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=1400">
+		
+		<link href="../src/styles/css/font.css" type="text/css" rel="stylesheet">
+		<link href="../src/styles/css/style.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- 신고자 명부 관리>목록>신고자 상세>신고자 수정 -->
+		<div class="wrap">
+			<!-- header -->
+			<header class="header">
+				<!-- hLogo : 헤더 로고 -->
+				<div class="hLogo">
+					<img src="../src/assets/images/img-logo-0.svg" alt="헤더 로고" />
+					<span>재배작물 관리 서비스</span>
+				</div>
+
+				<!-- nav -->
+				<nav class="nav">
+					<!-- nMenuList : 헤더 왼쪽 메뉴 -->
+					<ul class="nMenuList">
+						<!-- nMenu00 : 재배작물조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu00">
+							<a href="#">재배작물조회</a>
+						</li>
+						<!-- nMenu01 : 농지이용실태 조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu01">
+							<a href="#">농지이용실태 조회</a>
+						</li>
+						<!-- nMenu02 : 신고서 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu02">
+							<a href="#">신고서 관리</a>
+						</li>
+						<!-- nMenu03 : 신고자 명부 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu03 on">
+							<a href="#">신고자 명부 관리</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="hMenuArea">
+					<!-- hMenuList : 헤더 오른쪽 메뉴 -->
+					<ul class="hMenuList">
+						<li>
+							<div class="hMenuImg"><img src="../src/assets/images/icon-user-0.svg" alt="계정 아이콘" /></div>
+							<div class="hMenuTxt">홍길동<span>님</span></div>
+						</li>
+						<li>
+							<button type="button" class="bHeight01 bFillType01" onclick="">
+								<span>로그아웃</span>
+							</button>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-setting-0.svg" alt="관리자 아이콘" /></div>
+								<div class="hMenuTxt">관리자</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-home-1.svg" alt="홈 아이콘" /></div>
+								<div class="hMenuTxt">홈</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<!-- content -->
+			<div class="cWrap">
+				<!-- cPage : 기본 페이지 -->
+				<section class="cPage">
+					<!-- pagePathArea : 페이지 경로 영역 -->
+					<article class="pagePathArea">
+						<ul class="pagePathList">
+							<li>
+								<a href="#">신고자 명부 관리</a>
+							</li>
+							<li>
+								<a href="#">신고자 등록</a>
+							</li>
+						</ul>
+					</article>
+
+					<!-- pageTitArea : 페이지 제목 영역 -->
+					<article class="pageTitArea">
+						<div class="pageTitLeft">
+							<button type="button" class="bBack" onclick="">
+								<span>뒤로가기 버튼</span>
+							</button>
+							<div class="pageTit">신고자 수정</div>
+						</div>
+					</article>
+
+					<!-- pageConArea : 페이지 내용 영역 -->
+					<article class="pageConArea">
+						<div class="cTableWrap mt40">
+							<!-- cTableTopArea : 테이블 상단 영역 -->
+							<div class="cTableTopArea">
+								<div class="cTableTopLeft">
+									<div class="cTableTopTit">신고자 정보 입력</div>
+								</div>
+								<div class="cTableTopRight">
+									<ul class="cTableTopData">
+										<li><img src="../src/assets/images/icon-star-1r.svg" alt="필수항목 표시" class="cRequired" />표는 필수항목</li>
+									</ul>
+								</div>
+							</div>
+							<!-- cDetailTableArea : 테이블 영역 (상세 페이지) -->
+							<div class="cDetailTableArea">
+								<table class="cDetailTable">
+									<caption class="not-view">신고자 명부 관리에서 신고자 수정시 신고자 정보</caption>
+									<colgroup>
+										<col width="13%" />
+										<col width="*" />
+										<col width="13%" />
+										<col width="*" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th id="th0000">
+												<!-- cRequired : 필수항목일 경우 추가 -->
+												<span class="cRequired">이름</span>
+											</th>
+											<td headers="th0000">
+												<div class="cLeft">홍길동</div>
+											</td>
+											<th id="th0001">
+												<!-- cRequired : 필수항목일 경우 추가 -->
+												<span class="cRequired">생년월일</span>
+											</th>
+											<td headers="th0001">
+												<div class="cLeft">1945.02.05</div>
+											</td>
+										</tr>
+										<tr>
+											<th id="th0002">법인/사업자등록번호</th>
+											<td colspan="3" headers="th0002">
+												<div class="cLeft">
+													<input type="text" value="235-256-22322333" />
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th id="th0003">
+												<!-- cRequired : 필수항목일 경우 추가 -->
+												<span class="cRequired">주소(행정리)</span>
+											</th>
+											<td headers="th0003">
+												<div class="cLeft cFlex">
+													<select>
+														<option value="서귀포시">서귀포시</option>
+														<option value="제주시">제주시</option>
+													</select>
+													<select>
+														<option value="대정읍">대정읍</option>
+													</select>
+													<select>
+														<option value="상모1리">상모1리</option>
+													</select>
+												</div>
+											</td>
+											<th id="th0004">주소(도로명)</th>
+											<td headers="th0004">
+												<div class="cLeft">
+													<!-- cSearchBox : 텍스트 검색창 -->
+													<div class="cSearchBox">
+														<!-- cSearchBoxInput : 텍스트 입력창으로 placeholder 값 필수 -->
+														<input type="text" class="cSearchBoxInput" placeholder="주소(도로명)를 입력해 주세요." value="서귀포시 대정읍 상모리 2707" />
+														<!-- cSearchBoxBtn : 텍스트 삭제 버튼 -->
+														<button type="button" class="cSearchBoxBtn" onclick="">
+															<span>텍스트 삭제 버튼</span>
+														</button>
+														<!-- cSearchBoxIcon : 텍스트 검색창 아이콘 -->
+														<span class="cSearchBoxIcon"></span>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th id="th0005">연락처(자택)</th>
+											<td headers="th0005">
+												<div class="cLeft">
+													<input type="text" value="064-325-2131" />
+												</div>
+											</td>
+											<th id="th0006">
+												<!-- cRequired : 필수항목일 경우 추가 -->
+												<span class="cRequired">연락처(휴대폰)</span>
+											</th>
+											<td headers="th0006">
+												<div class="cLeft">
+													<input type="text" value="010-1234-1234" />
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- cTableBottomArea : 테이블 하단 영역 -->
+							<div class="cTableBottomArea">
+								<div class="cTableBottomLeft">
+									<button type="button" class="bHeight03 bLineType03" onclick="">
+										<span>취소</span>
+									</button>
+								</div>
+								<div class="cTableBottomRight">
+									<button type="button" class="bHeight03" onclick="">
+										<span>확인</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</article>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

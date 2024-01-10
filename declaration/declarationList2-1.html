@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>재배작물 관리 서비스</title>
+		<meta name="description" content="재배작물 관리 서비스">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=1400">
+		
+		<link href="../src/styles/css/font.css" type="text/css" rel="stylesheet">
+		<link href="../src/styles/css/style.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- 신고자 명부 관리>목록 -->
+		<div class="wrap">
+			<!-- header -->
+			<header class="header">
+				<!-- hLogo : 헤더 로고 -->
+				<div class="hLogo">
+					<img src="../src/assets/images/img-logo-0.svg" alt="헤더 로고" />
+					<span>재배작물 관리 서비스</span>
+				</div>
+
+				<!-- nav -->
+				<nav class="nav">
+					<!-- nMenuList : 헤더 왼쪽 메뉴 -->
+					<ul class="nMenuList">
+						<!-- nMenu00 : 재배작물조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu00">
+							<a href="#">재배작물조회</a>
+						</li>
+						<!-- nMenu01 : 농지이용실태 조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu01">
+							<a href="#">농지이용실태 조회</a>
+						</li>
+						<!-- nMenu02 : 신고서 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu02">
+							<a href="#">신고서 관리</a>
+						</li>
+						<!-- nMenu03 : 신고자 명부 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu03 on">
+							<a href="#">신고자 명부 관리</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="hMenuArea">
+					<!-- hMenuList : 헤더 오른쪽 메뉴 -->
+					<ul class="hMenuList">
+						<li>
+							<div class="hMenuImg"><img src="../src/assets/images/icon-user-0.svg" alt="계정 아이콘" /></div>
+							<div class="hMenuTxt">홍길동<span>님</span></div>
+						</li>
+						<li>
+							<button type="button" class="bHeight01 bFillType01" onclick="">
+								<span>로그아웃</span>
+							</button>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-setting-0.svg" alt="관리자 아이콘" /></div>
+								<div class="hMenuTxt">관리자</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-home-1.svg" alt="홈 아이콘" /></div>
+								<div class="hMenuTxt">홈</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<!-- content -->
+			<div class="cWrap">
+				<!-- cPage : 기본 페이지 -->
+				<section class="cPage">
+					<!-- pagePathArea : 페이지 경로 영역 -->
+					<article class="pagePathArea">
+						<ul class="pagePathList">
+							<li>
+								<a href="#">신고자 명부 관리</a>
+							</li>
+						</ul>
+					</article>
+
+					<!-- pageTitArea : 페이지 제목 영역 -->
+					<article class="pageTitArea">
+						<div class="pageTitLeft">
+							<div class="pageTit">신고자 명부 관리</div>
+						</div>
+					</article>
+
+					<!-- pageConArea : 페이지 내용 영역 -->
+					<article class="pageConArea">
+						<!-- pageSearchArea : 페이지 검색조건 영역 (신고자명을 선택했을 경우) -->
+						<div class="pageSearchArea">
+							<!-- pageSearchItem : 페이지 검색조건 항목 -->
+							<div class="pageSearchItem">
+								<div class="tit">조회 방법 선택</div>
+								<div class="con">
+									<div class="cRadio">
+										<input type="radio" id="radioItem0000" name="radioItem00" checked onchange="" />
+										<label for="radioItem0000">신고자</label>
+									</div>
+									<div class="cRadio">
+										<input type="radio" id="radioItem0001" name="radioItem00" onchange="" />
+										<label for="radioItem0001">주소</label>
+									</div>
+									<div class="cRadio">
+										<input type="radio" id="radioItem0002" name="radioItem00" onchange="" />
+										<label for="radioItem0002">행정리</label>
+									</div>
+									<!-- 조회 방법에서 신고자명 선택시 노출되는 검색조건 -->
+									<div class="cFlex">
+										<!-- cSearchBox2 : 텍스트 검색창 (아이콘 없음) -->
+										<div class="cSearchBox2">
+											<!-- cSearchBoxInput : 텍스트 입력창으로 placeholder 값 필수 -->
+											<input type="text" class="cSearchBoxInput" placeholder="신고자명을 입력해 주세요." />
+											<!-- cSearchBoxBtn : 텍스트 삭제 버튼 -->
+											<button type="button" class="cSearchBoxBtn" onclick="">
+												<span>텍스트 삭제 버튼</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="bSearch" onclick="">
+								<span>검색</span>
+							</button>
+						</div>
+
+						<!-- pageSearchArea : 페이지 검색조건 영역 (주소를 선택했을 경우) -->
+						<div class="pageSearchArea">
+							<!-- pageSearchItem : 페이지 검색조건 항목 -->
+							<div class="pageSearchItem">
+								<div class="tit">조회 방법 선택</div>
+								<div class="con">
+									<div class="cRadio">
+										<input type="radio" id="radioItem0100" name="radioItem01" onchange="" />
+										<label for="radioItem0100">신고자</label>
+									</div>
+									<div class="cRadio">
+										<input type="radio" id="radioItem0101" name="radioItem01" checked onchange="" />
+										<label for="radioItem0101">주소</label>
+									</div>
+									<div class="cRadio">
+										<input type="radio" id="radioItem0102" name="radioItem01" onchange="" />
+										<label for="radioItem0102">행정리</label>
+									</div>
+									<!-- 조회 방법에서 주소 선택시 노출되는 검색조건 -->
+									<div class="cFlex">
+										<!-- cSearchBox2 : 텍스트 검색창 (아이콘 없음) -->
+										<div class="cSearchBox2">
+											<!-- cSearchBoxInput : 텍스트 입력창으로 placeholder 값 필수 -->
+											<input type="text" class="cSearchBoxInput" placeholder="주소를 검색해 주세요." />
+											<!-- cSearchBoxBtn : 텍스트 삭제 버튼 -->
+											<button type="button" class="cSearchBoxBtn" onclick="">
+												<span>텍스트 삭제 버튼</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="bSearch" onclick="">
+								<span>검색</span>
+							</button>
+						</div>
+
+						<!-- pageSearchArea : 페이지 검색조건 영역 (행정리를 선택했을 경우) -->
+						<div class="pageSearchArea">
+							<!-- pageSearchItem : 페이지 검색조건 항목 -->
+							<div class="pageSearchItem">
+								<div class="tit">조회 방법 선택</div>
+								<div class="con">
+									<div class="cRadio">
+										<input type="radio" id="radioItem0200" name="radioItem02" onchange="" />
+										<label for="radioItem0200">신고자</label>
+									</div>
+									<div class="cRadio">
+										<input type="radio" id="radioItem0201" name="radioItem02" onchange="" />
+										<label for="radioItem0201">주소</label>
+									</div>
+									<div class="cRadio">
+										<input type="radio" id="radioItem0202" name="radioItem02" checked onchange="" />
+										<label for="radioItem0202">행정리</label>
+									</div>
+									<!-- 조회 방법에서 행정리 선택시 노출되는 검색조건 -->
+									<div class="cFlex">
+										<select>
+											<option value="">시 선택</option>
+										</select>
+										<select>
+											<option value="">읍면동 선택</option>
+										</select>
+										<select>
+											<option value="">리 선택</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="bSearch" onclick="">
+								<span>검색</span>
+							</button>
+						</div>
+
+						<div class="cTableWrap">
+							<!-- cTableTopArea : 테이블 상단 영역 -->
+							<div class="cTableTopArea">
+								<div class="cTableTopLeft">
+									<ul class="cTableTopData">
+										<!-- num : 숫자일 경우 추가 -->
+										<li>총 <span class="num">456</span> 건</li>
+									</ul>
+								</div>
+								<div class="cTableTopRight">
+									<button type="button" class="bLineType01" onclick="">
+										<span>신고자 등록</span>
+									</button>
+									<button type="button" class="bLineType01 bDownload" onclick="">
+										<span>엑셀 다운로드</span>
+									</button>
+								</div>
+							</div>
+							<!-- cListTableArea2 : 테이블 영역 (목록 페이지), notVerticalBorder : 테이블 헤더에 왼쪽 테두리가 없을 경우 추가 -->
+							<div class="cListTableArea2 notVerticalBorder">
+								<table class="cListTable">
+									<caption class="not-view">신고자 명부 관리에서 신고자 명부 목록</caption>
+									<colgroup>
+										<col width="6%" />
+										<col width="11%" />
+										<col width="10%" />
+										<col width="12%" />
+										<col width="*" />
+										<col width="18%" />
+										<col width="12%" />
+										<col width="12%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">고유번호</th>
+											<th scope="col">이름</th>
+											<th scope="col">생년월일</th>
+											<th scope="col">법인/사업자등록번호</th>
+											<th scope="col">주소</th>
+											<th scope="col">행정리</th>
+											<th scope="col">자택</th>
+											<th scope="col">휴대폰</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td>036-233-4563</td>
+											<td>010-3225-1112</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td>036-233-4563</td>
+											<td>010-3225-1112</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td>036-233-4563</td>
+											<td>010-3225-1112</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td>036-233-4563</td>
+											<td>010-3225-1112</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td></td>
+											<td>010-3225-1112</td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td></td>
+											<td>010-3225-1112</td>
+										</tr>
+										<tr>
+											<td>7</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td></td>
+											<td>010-3225-1112</td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td></td>
+											<td>010-3225-1112</td>
+										</tr>
+										<tr>
+											<td>9</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td></td>
+											<td>010-3225-1112</td>
+										</tr>
+										<tr>
+											<td>10</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td>036-233-4563</td>
+											<td>010-3225-1112</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- cPagingArea : 페이징 영역 -->
+							<div class="cPagingArea">
+								<ul class="cPagingList">
+									<!-- firstArrow : 맨 처음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+									<li class="arrow firstArrow">
+										<a href="#"></a>
+									</li>
+									<!-- prevArrow : 이전페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+									<li class="arrow prevArrow">
+										<a href="#"></a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li class="on">
+										<a href="#">1</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">2</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">3</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">4</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">5</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">6</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">7</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">8</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">9</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">10</a>
+									</li>
+									<!-- shortNum : 페이징 번호가 많을 경우 노출함, disabled : 비활성화일 경우 추가 -->
+									<li class="shortNum disabled">
+										<a href="#">...</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">38</a>
+									</li>
+									<!-- nextArrow : 다음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+									<li class="arrow nextArrow">
+										<a href="#"></a>
+									</li>
+									<!-- lastArrow : 맨 마지막페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+									<li class="arrow lastArrow">
+										<a href="#"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>재배작물 관리 서비스</title>
+		<meta name="description" content="재배작물 관리 서비스">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=1400">
+		
+		<link href="../src/styles/css/font.css" type="text/css" rel="stylesheet">
+		<link href="../src/styles/css/style.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- 신고서 관리>목록>신고서 등록>신고자 명부 조회창 -->
+		<div class="wrap">
+			<!-- header -->
+			<header class="header">
+				<!-- hLogo : 헤더 로고 -->
+				<div class="hLogo">
+					<img src="../src/assets/images/img-logo-0.svg" alt="헤더 로고" />
+					<span>재배작물 관리 서비스</span>
+				</div>
+
+				<!-- nav -->
+				<nav class="nav">
+					<!-- nMenuList : 헤더 왼쪽 메뉴 -->
+					<ul class="nMenuList">
+						<!-- nMenu00 : 재배작물조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu00">
+							<a href="#">재배작물조회</a>
+						</li>
+						<!-- nMenu01 : 농지이용실태 조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu01">
+							<a href="#">농지이용실태 조회</a>
+						</li>
+						<!-- nMenu02 : 신고서 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu02 on">
+							<a href="#">신고서 관리</a>
+						</li>
+						<!-- nMenu03 : 신고자 명부 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu03">
+							<a href="#">신고자 명부 관리</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="hMenuArea">
+					<!-- hMenuList : 헤더 오른쪽 메뉴 -->
+					<ul class="hMenuList">
+						<li>
+							<div class="hMenuImg"><img src="../src/assets/images/icon-user-0.svg" alt="계정 아이콘" /></div>
+							<div class="hMenuTxt">홍길동<span>님</span></div>
+						</li>
+						<li>
+							<button type="button" class="bHeight01 bFillType01" onclick="">
+								<span>로그아웃</span>
+							</button>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-setting-0.svg" alt="관리자 아이콘" /></div>
+								<div class="hMenuTxt">관리자</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-home-1.svg" alt="홈 아이콘" /></div>
+								<div class="hMenuTxt">홈</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<!-- content -->
+			<div class="cWrap">
+				<!-- cPage : 기본 페이지 -->
+				<section class="cPage">
+					<!-- pagePathArea : 페이지 경로 영역 -->
+					<article class="pagePathArea">
+						<ul class="pagePathList">
+							<li>
+								<a href="#">신고서 관리</a>
+							</li>
+							<li>
+								<a href="#">신고서 등록</a>
+							</li>
+						</ul>
+					</article>
+
+					<!-- pageTitArea : 페이지 제목 영역 -->
+					<article class="pageTitArea">
+						<div class="pageTitLeft">
+							<button type="button" class="bBack" onclick="">
+								<span>뒤로가기 버튼</span>
+							</button>
+							<div class="pageTit">신고서 등록</div>
+						</div>
+					</article>
+
+					<!-- pageConArea : 페이지 내용 영역 -->
+					<article class="pageConArea">
+						<div class="cTableWrap mt40">
+							<!-- cTableTopArea : 테이블 상단 영역 -->
+							<div class="cTableTopArea">
+								<div class="cTableTopLeft">
+									<div class="cTableTopTit">신고자 정보</div>
+									<button type="button" class="bLineType01 bSearch2" onclick="">
+										<span>신고자 명부 조회</span>
+									</button>
+								</div>
+							</div>
+							<!-- cDetailTableArea : 테이블 영역 (상세 페이지) -->
+							<div class="cDetailTableArea">
+								<table class="cDetailTable">
+									<caption class="not-view">신고서 관리에서 신고서 등록시 신고자 정보</caption>
+									<colgroup>
+										<col width="13%" />
+										<col width="*" />
+										<col width="13%" />
+										<col width="*" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th id="th0000">이름</th>
+											<td headers="th0000">
+												<div class="cLeft">홍길동</div>
+											</td>
+											<th id="th0001">생년월일</th>
+											<td headers="th0001">
+												<div class="cLeft">1945.02.05</div>
+											</td>
+										</tr>
+										<tr>
+											<th id="th0002">법인/사업자등록번호</th>
+											<td headers="th0002">
+												<div class="cLeft">235-256-22322333</div>
+											</td>
+											<th id="th0003">주소</th>
+											<td headers="th0003">
+												<div class="cLeft">서귀포시 대정읍 상모리 2707</div>
+											</td>
+										</tr>
+										<tr>
+											<th id="th0004">연락처(자택)</th>
+											<td headers="th0004">
+												<div class="cLeft">064-325-2131</div>
+											</td>
+											<th id="th0005">연락처(휴대폰)</th>
+											<td headers="th0005">
+												<div class="cLeft">010-1234-1234</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="cTableWrap">
+							<!-- cTableTopArea : 테이블 상단 영역 -->
+							<div class="cTableTopArea">
+								<div class="cTableTopLeft">
+									<div class="cTableTopTit">신고 내역</div>
+									<!-- <button type="button" class="bLineType01 bPlus2" onclick="">
+										<span>추가</span>
+									</button> -->
+								</div>
+								<div class="cTableTopRight">
+									<button type="button" class="bLineType01 bPlus2" onclick="">
+										<span>신고서 추가</span>
+									</button>
+									<button type="button" class="bLineType01 bPrint2" onclick="">
+										<span>신고 내역 출력</span>
+									</button>
+								</div>
+							</div>
+							<!-- cListTableArea3 : 테이블 영역 (상세 페이지) -->
+							<div class="cListTableArea3">
+								<table class="cListTable">
+									<caption class="not-view">신고서 관리에서 신고서 등록시 신고 내역 목록</caption>
+									<colgroup>
+										<col width="4%" />
+										<col width="8%" />
+										<col width="8%" />
+										<col width="8%" />
+										<col width="8%" />
+										<col width="6%" />
+										<col width="8%" />
+										<col width="8%" />
+										<col width="8%" />
+										<col width="8%" />
+										<col width="*" />
+										<col width="*" />
+										<col width="*" />
+										<col width="4%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th rowspan="2" id="th0100">지도 보기</th>
+											<th colspan="4" id="th0101">농지 소재지</th>
+											<th rowspan="2" id="th0102">지적면적(㎡)</th>
+											<th colspan="4" id="th0103">2020년도 신고내역</th>
+											<th colspan="3" id="th0104">2021년도 신고내역</th>
+											<th rowspan="2" id="th0105">삭제</th>
+										</tr>
+										<tr>
+											<th headers="th0101" id="th010100">시</th>
+											<th headers="th0101" id="th010101">읍면동</th>
+											<th headers="th0101" id="th010102">리</th>
+											<th headers="th0101" id="th010103">번지</th>
+											<th headers="th0103" id="th010300">신고품목</th>
+											<th headers="th0103" id="th010301">신고면적(㎡)</th>
+											<th headers="th0103" id="th010302">분석 면적(㎡)</th>
+											<th headers="th0103" id="th010303">분석 품목</th>
+											<th headers="th0104" id="th010400">신고품목</th>
+											<th headers="th0104" id="th010401">신고면적(㎡)</th>
+											<th headers="th0104" id="th010402">자경/임차</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td headers="th0100">
+												<button type="button" class="bLocation" onclick="">
+													<span>위치보기</span>
+												</button>
+											</td>
+											<td headers="th0101 th010100">
+												<select>
+													<option value="서귀포시">서귀포시</option>
+													<option value="제주시">제주시</option>
+												</select>
+											</td>
+											<td headers="th0101 th010101">
+												<select>
+													<option value="대정읍">대정읍</option>
+												</select>
+											</td>
+											<td headers="th0101 th010102">
+												<select>
+													<option value="무릉리">무릉리</option>
+												</select>
+											</td>
+											<td headers="th0101 th010103">
+												<input type="text" value="3140-22343" />
+											</td>
+											<td headers="th0102">
+												<input type="text" value="3140-22343" />
+											</td>
+											<td headers="th0103 th010300">구마늘</td>
+											<td headers="th0103 th010301">2918.41</td>
+											<td headers="th0103 th010302">2918.41</td>
+											<td headers="th0103 th010303">구마늘</td>
+											<td headers="th0104 th010400">
+												<select>
+													<option value="구마늘">구마늘</option>
+												</select>
+											</td>
+											<td headers="th0104 th010401">
+												<select>
+													<option value="100">100%</option>
+												</select>
+											</td>
+											<td headers="th0104 th010402">
+												<select>
+													<option value="자경">자경</option>
+													<option value="임차">임차</option>
+												</select>
+											</td>
+											<td headers="th0105">
+												<button type="button" class="bDelete" onclick="">
+													<span>삭제</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td headers="th0100">
+												<button type="button" class="bLocation" onclick="">
+													<span>위치보기</span>
+												</button>
+											</td>
+											<td headers="th0101 th010100">
+												<select>
+													<option value="서귀포시">서귀포시</option>
+													<option value="제주시">제주시</option>
+												</select>
+											</td>
+											<td headers="th0101 th010101">
+												<select>
+													<option value="대정읍">대정읍</option>
+												</select>
+											</td>
+											<td headers="th0101 th010102">
+												<select>
+													<option value="무릉리">무릉리</option>
+												</select>
+											</td>
+											<td headers="th0101 th010103">
+												<input type="text" value="3140-22343" />
+											</td>
+											<td headers="th0102">
+												<input type="text" value="3140-22343" />
+											</td>
+											<td headers="th0103 th010300">구마늘</td>
+											<td headers="th0103 th010301">2918.41</td>
+											<td headers="th0103 th010302">2918.41</td>
+											<td headers="th0103 th010303">구마늘</td>
+											<td headers="th0104 th010400">
+												<select>
+													<option value="구마늘">구마늘</option>
+												</select>
+											</td>
+											<td headers="th0104 th010401">
+												<select>
+													<option value="100">100%</option>
+												</select>
+											</td>
+											<td headers="th0104 th010402">
+												<select>
+													<option value="자경">자경</option>
+													<option value="임차">임차</option>
+												</select>
+											</td>
+											<td headers="th0105">
+												<button type="button" class="bDelete" onclick="">
+													<span>삭제</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td headers="th0100">
+												<button type="button" class="bLocation" onclick="">
+													<span>위치보기</span>
+												</button>
+											</td>
+											<td headers="th0101 th010100">
+												<select>
+													<option value="서귀포시">서귀포시</option>
+													<option value="제주시">제주시</option>
+												</select>
+											</td>
+											<td headers="th0101 th010101">
+												<select>
+													<option value="대정읍">대정읍</option>
+												</select>
+											</td>
+											<td headers="th0101 th010102">
+												<select>
+													<option value="무릉리">무릉리</option>
+												</select>
+											</td>
+											<td headers="th0101 th010103">
+												<input type="text" value="3140-22343" />
+											</td>
+											<td headers="th0102">
+												<input type="text" value="3140-22343" />
+											</td>
+											<td headers="th0103 th010300">구마늘</td>
+											<td headers="th0103 th010301">2918.41</td>
+											<td headers="th0103 th010302">2918.41</td>
+											<td headers="th0103 th010303">구마늘</td>
+											<td headers="th0104 th010400">
+												<select>
+													<option value="구마늘">구마늘</option>
+												</select>
+											</td>
+											<td headers="th0104 th010401">
+												<select>
+													<option value="100">100%</option>
+												</select>
+											</td>
+											<td headers="th0104 th010402">
+												<select>
+													<option value="자경">자경</option>
+													<option value="임차">임차</option>
+												</select>
+											</td>
+											<td headers="th0105">
+												<button type="button" class="bDelete" onclick="">
+													<span>삭제</span>
+												</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- cTableBottomArea : 테이블 하단 영역 -->
+							<div class="cTableBottomArea">
+								<div class="cTableBottomLeft">
+									<button type="button" class="bHeight03 bLineType03" onclick="">
+										<span>취소</span>
+									</button>
+									<button type="button" class="bHeight03" onclick="">
+										<span>확인</span>
+									</button>
+								</div>
+								<div class="cTableBottomRight">
+									<button type="button" class="bHeight03 bLineType03 bList" onclick="">
+										<span>전체 목록</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</article>
+				</section>
+			</div>
+
+			<!-- layer -->
+			<div class="lWrap">
+				<!-- 신고자 명부 조회창, lWidth1280 : 레이어창 너비가 1280px일 경우 추가, on : 레이어창을 노출할 경우 추가 -->
+				<div class="lArea lWidth1280 on">
+					<div class="lBox">
+						<!-- lTitArea : 레이어창 제목 영역 -->
+						<div class="lTitArea">
+							<div class="lTit">신고자 명부 조회</div>
+							<button type="button" class="lTitBtn" onclick="">
+								<span>레이어창 닫기</span>
+							</button>
+						</div>
+						<!-- lConArea : 레이어창 내용 영역 -->
+						<div class="lConArea">
+							<!-- lConTop : 레이어창 내용 상단 영역 -->
+							<div class="lConTop">
+								<div class="lConTopCenter">
+									<!-- cSearchBox2 : 텍스트 검색창 (아이콘 없음) -->
+									<div class="cSearchBox2">
+										<!-- cSearchBoxInput : 텍스트 입력창으로 placeholder 값 필수 -->
+										<input type="text" class="cSearchBoxInput" placeholder="검색어를 입력해주세요." />
+										<!-- cSearchBoxBtn : 텍스트 삭제 버튼 -->
+										<button type="button" class="cSearchBoxBtn" onclick="">
+											<span>텍스트 삭제 버튼</span>
+										</button>
+									</div>
+									<button type="button" class="bSearch" onclick="">
+										<span>검색</span>
+									</button>
+								</div>
+							</div>
+							<!-- cListTableArea2 : 테이블 영역 (목록 페이지), notVerticalBorder : 테이블 헤더에 왼쪽 테두리가 없을 경우 추가 -->
+							<div class="cListTableArea2 notVerticalBorder">
+								<table class="cListTable">
+									<caption class="not-view">신고서 관리에서 신고서 등록시 신고자 명부 조회 목록</caption>
+									<colgroup>
+										<col width="6%" />
+										<col width="8%" />
+										<col width="9%" />
+										<col width="12%" />
+										<col width="*" />
+										<col width="14%" />
+										<col width="10%" />
+										<col width="11%" />
+										<col width="6%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">고유번호</th>
+											<th scope="col">이름</th>
+											<th scope="col">생년월일</th>
+											<th scope="col">법인/사업자등록번호</th>
+											<th scope="col">주소</th>
+											<th scope="col">행정리</th>
+											<th scope="col">자택</th>
+											<th scope="col">휴대폰</th>
+											<th scope="col">선택</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td>036-233-4563</td>
+											<td>010-3225-1112</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>선택</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td>036-233-4563</td>
+											<td>010-3225-1112</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>선택</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td>036-233-4563</td>
+											<td>010-3225-1112</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>선택</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td>036-233-4563</td>
+											<td>010-3225-1112</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>선택</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td></td>
+											<td>010-3225-1112</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>선택</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td></td>
+											<td>010-3225-1112</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>선택</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>7</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td></td>
+											<td>010-3225-1112</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>선택</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td></td>
+											<td>010-3225-1112</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>선택</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>9</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td></td>
+											<td>010-3225-1112</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>선택</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>10</td>
+											<td>홍길동</td>
+											<td>1948.09.20</td>
+											<td>111-11211-11222</td>
+											<td>
+												<div class="cLeft">서귀포시 대정읍 무릉리 3473-1</div>
+											</td>
+											<td>서귀포시 대정읍 무릉리</td>
+											<td>036-233-4563</td>
+											<td>010-3225-1112</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>선택</span>
+												</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- cPagingArea : 페이징 영역 -->
+							<div class="cPagingArea">
+								<ul class="cPagingList">
+									<!-- firstArrow : 맨 처음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+									<li class="arrow firstArrow">
+										<a href="#"></a>
+									</li>
+									<!-- prevArrow : 이전페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+									<li class="arrow prevArrow">
+										<a href="#"></a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li class="on">
+										<a href="#">1</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">2</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">3</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">4</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">5</a>
+									</li>
+									<!-- shortNum : 페이징 번호가 많을 경우 노출함, disabled : 비활성화일 경우 추가 -->
+									<li class="shortNum disabled">
+										<a href="#">...</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">38</a>
+									</li>
+									<!-- nextArrow : 다음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+									<li class="arrow nextArrow">
+										<a href="#"></a>
+									</li>
+									<!-- lastArrow : 맨 마지막페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+									<li class="arrow lastArrow">
+										<a href="#"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="lMask"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
