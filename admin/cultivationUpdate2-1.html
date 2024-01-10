@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>재배작물 관리 서비스</title>
+		<meta name="description" content="재배작물 관리 서비스">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=1400">
+		
+		<link href="../src/styles/css/font.css" type="text/css" rel="stylesheet">
+		<link href="../src/styles/css/style.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- 재배작물관리>농지이용실태 관리 필지 업로드 -->
+		<div class="wrap">
+			<!-- header -->
+			<header class="header">
+				<!-- hLogo : 헤더 로고 -->
+				<div class="hLogo">
+					<img src="../src/assets/images/img-logo-0.svg" alt="헤더 로고" />
+					<span>재배작물 관리 서비스</span>
+				</div>
+
+				<!-- nav -->
+				<nav class="nav">
+					<!-- nMenuList : 헤더 왼쪽 메뉴 -->
+					<ul class="nMenuList">
+						<!-- nMenu00 : 재배작물조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu00">
+							<a href="#">재배작물조회</a>
+						</li>
+						<!-- nMenu01 : 농지이용실태 조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu01">
+							<a href="#">농지이용실태 조회</a>
+						</li>
+						<!-- nMenu02 : 신고서 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu02">
+							<a href="#">신고서 관리</a>
+						</li>
+						<!-- nMenu03 : 신고자 명부 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu03">
+							<a href="#">신고자 명부 관리</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="hMenuArea">
+					<!-- hMenuList : 헤더 오른쪽 메뉴 -->
+					<ul class="hMenuList">
+						<li>
+							<div class="hMenuImg"><img src="../src/assets/images/icon-user-0.svg" alt="계정 아이콘" /></div>
+							<div class="hMenuTxt">홍길동<span>님</span></div>
+						</li>
+						<li>
+							<button type="button" class="bHeight01 bFillType01" onclick="">
+								<span>로그아웃</span>
+							</button>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-setting-0.svg" alt="관리자 아이콘" /></div>
+								<div class="hMenuTxt">관리자</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-home-1.svg" alt="홈 아이콘" /></div>
+								<div class="hMenuTxt">홈</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<!-- content -->
+			<div class="cWrap">
+				<!-- aside -->
+				<aside class="aside">
+					<div class="aTit">관리자</div>
+					<ul class="aMenuList">
+						<!-- aMenuUser : 사용자 관리, on : 해당 페이지의 메뉴일 경우 추가, hide : 하위 메뉴를 숨길 경우 추가 -->
+						<li class="aMenuUser">
+							<div class="aMenuTit" onclick="">사용자 관리</div>
+							<ul>
+								<!-- on : 해당 페이지의 메뉴일 경우 추가 -->
+								<li onclick="">승인대기</li>
+								<li onclick="">사용자 목록</li>
+							</ul>
+						</li>
+						<!-- aMenuYield : 생산량 정보 관리 , on : 해당 페이지의 메뉴일 경우 추가, hide : 하위 메뉴를 숨길 경우 추가 -->
+						<li class="aMenuYield">
+							<div class="aMenuTit" onclick="">생산량 정보 관리</div>
+						</li>
+						<!-- aMenuUpload : 농지이용실태 관리 필지 업로드 , on : 해당 페이지의 메뉴일 경우 추가, hide : 하위 메뉴를 숨길 경우 추가 -->
+						<li class="aMenuUpload on">
+							<div class="aMenuTit" onclick="">농지이용실태 관리 필지 업로드</div>
+						</li>
+					</ul>
+				</aside>
+
+				<!-- cPage : 기본 페이지 -->
+				<section class="cPage">
+					<!-- pagePathArea : 페이지 경로 영역 -->
+					<article class="pagePathArea">
+						<ul class="pagePathList">
+							<li>
+								<a href="#">관리자</a>
+							</li>
+							<li>
+								<a href="#">농지이용실태 관리 필지 업로드</a>
+							</li>
+						</ul>
+					</article>
+
+					<!-- pageTitArea : 페이지 제목 영역 -->
+					<article class="pageTitArea">
+						<div class="pageTitLeft">
+							<div class="pageTit">농지이용실태 관리 필지 업로드</div>
+						</div>
+						<div class="pageTitExplain">연도별 관리 필지 정보를 업로드 하세요.</div>
+					</article>
+
+					<!-- pageConArea : 페이지 내용 영역 -->
+					<article class="pageConArea">
+						<div class="cTableWrap">
+							<!-- cTableTopArea : 테이블 상단 영역 -->
+							<div class="cTableTopArea">
+								<div class="cTableTopLeft">
+									<button type="button" class="bLineType02 bDownload" onclick="">
+										<span>엑셀 다운로드</span>
+									</button>
+									<select>
+										<option value="2023">2023</option>
+									</select>
+								</div>
+								<div class="cTableTopRight">
+									<button type="button" class="bLineType02 bExcel" onclick="">
+										<span>엑셀 업로드</span>
+									</button>
+								</div>
+							</div>
+							<!-- pageExcelArea : 엑셀 업로드 문구 영역, pageUploadArea : 엑셀 업로드 초기화면일 경우 추가 -->
+							<div class="pageExcelArea pageUploadArea">
+								<img src="../src/assets/images/img-upload-0.svg" alt="엑셀 업로드 이미지" />
+								<div class="big">엑셀 파일을 업로드 해주세요.</div>
+								<div class="small">제공된 양식을 사용하지 않고 업로드 시 업로드가 되지 않을 수 있습니다.</div>
+							</div>
+							<!-- cTableBottomArea : 테이블 하단 영역 -->
+							<div class="cTableBottomArea">
+								<div class="cTableBottomLeft">
+									<button type="button" class="bHeight03 bLineType03" onclick="">
+										<span>취소</span>
+									</button>
+								</div>
+								<div class="cTableBottomRight">
+									<button type="button" class="bHeight03" onclick="">
+										<span>확인</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</article>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

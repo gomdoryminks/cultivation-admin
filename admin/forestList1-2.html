@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>불법산림훼손 관리 서비스</title>
+		<meta name="description" content="불법산림훼손 관리 서비스">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=1400">
+		
+		<link href="../src/styles/css/font.css" type="text/css" rel="stylesheet">
+		<link href="../src/styles/css/style.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- 불법산림훼손>사용자 관리>사용자 목록 -->
+		<div class="wrap">
+			<!-- header -->
+			<header class="header">
+				<!-- hLogo : 헤더 로고 -->
+				<div class="hLogo">
+					<img src="../src/assets/images/img-logo-0.svg" alt="헤더 로고" />
+					<span>불법산림훼손 관리 서비스</span>
+				</div>
+
+				<!-- nav -->
+				<nav class="nav">
+					<!-- nMenuList : 헤더 왼쪽 메뉴 -->
+					<ul class="nMenuList">
+						<!-- nMenu00 : 재배작물조회, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu00">
+							<a href="#">재배작물조회</a>
+						</li>
+						<!-- nMenu07 : 훼손지 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
+						<li class="nMenu07">
+							<a href="#">훼손지 관리</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="hMenuArea">
+					<!-- hMenuList : 헤더 오른쪽 메뉴 -->
+					<ul class="hMenuList">
+						<li>
+							<div class="hMenuImg"><img src="../src/assets/images/icon-user-0.svg" alt="계정 아이콘" /></div>
+							<div class="hMenuTxt">홍길동<span>님</span></div>
+						</li>
+						<li>
+							<button type="button" class="bHeight01 bFillType01" onclick="">
+								<span>로그아웃</span>
+							</button>
+						</li>
+						<!-- on : 알림창을 노출할 경우 추가 -->
+						<li>
+							<!-- hMenuTit : 알림 메뉴명 -->
+							<div class="hMenuTit" onclick="">
+								<div class="hMenuImg">
+									<img src="../src/assets/images/icon-bell-0.svg" alt="알림 아이콘" />
+									<!-- hMenuCnt : 알림 개수 -->
+									<span class="hMenuCnt">5</span>
+								</div>
+								<div class="hMenuTxt">알림</div>
+							</div>
+							<!-- hMenuLayer : 알림창 -->
+							<div class="hMenuLayer">
+								<!-- cTableTopArea : 테이블 상단 영역 -->
+								<div class="cTableTopArea">
+									<div class="cTableTopLeft">
+										<div class="cTableTopTit">의심지 알림</div>
+										<ul class="cTableTopData">
+											<!-- num : 숫자일 경우 추가 -->
+											<li>총 <span class="num">12</span> 건</li>
+										</ul>
+									</div>
+									<div class="cTableTopRight">
+										<button type="button" class="bClose2" onclick="">
+											<span>알림창 닫기</span>
+										</button>
+									</div>
+								</div>
+								<!-- cListTableArea : 목록 테이블 영역 -->
+								<div class="cListTableArea">
+									<table class="cListTable">
+										<caption class="not-view">불법산림훼손 관리 서비스의 의심지 알림 목록</caption>
+										<colgroup>
+											<col width="48" />
+											<col width="*" />
+											<col width="80" />
+											<col width="80" />
+											<col width="14" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">위치</th>
+												<th scope="col">주소</th>
+												<th scope="col">면적(㎡)</th>
+												<th scope="col">변화율(%)</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr>
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>80</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr class="ok">
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>50</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr>
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>60</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+											<!-- ok : 알림을 확인했을 경우 추가 -->
+											<tr>
+												<td>
+													<button type="button" class="bLocation" onclick="">
+														<span>위치보기</span>
+													</button>
+												</td>
+												<td>
+													<div class="cLeft">서귀포시 돈내코로 267-1</div>
+												</td>
+												<td>1735</td>
+												<td>88</td>
+												<td>
+													<button type="button" class="bClose3" onclick="">
+														<span>알림삭제</span>
+													</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- cPagingArea : 페이징 영역 -->
+								<div class="cPagingArea">
+									<ul class="cPagingList">
+										<!-- firstArrow : 맨 처음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow firstArrow">
+											<a href="#"></a>
+										</li>
+										<!-- prevArrow : 이전페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow prevArrow">
+											<a href="#"></a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li class="on">
+											<a href="#">1</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">2</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">3</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">4</a>
+										</li>
+										<!-- on : 현재 페이지일 경우 추가 -->
+										<li>
+											<a href="#">5</a>
+										</li>
+										<!-- nextArrow : 다음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow nextArrow">
+											<a href="#"></a>
+										</li>
+										<!-- lastArrow : 맨 마지막페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+										<li class="arrow lastArrow">
+											<a href="#"></a>
+										</li>
+									</ul>
+								</div>
+								<!-- cTableBottomArea : 테이블 하단 영역 -->
+								<div class="cTableBottomArea">
+									<div class="cTableBottomRight">
+										<button type="button" class="bLineType01" onclick="">
+											<span>전체 알림삭제</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-setting-0.svg" alt="관리자 아이콘" /></div>
+								<div class="hMenuTxt">관리자</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="hMenuImg"><img src="../src/assets/images/icon-home-1.svg" alt="홈 아이콘" /></div>
+								<div class="hMenuTxt">홈</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<!-- content -->
+			<div class="cWrap">
+				<!-- aside -->
+				<aside class="aside">
+					<div class="aTit">관리자</div>
+					<ul class="aMenuList">
+						<!-- aMenuUser : 사용자 관리, on : 해당 페이지의 메뉴일 경우 추가, hide : 하위 메뉴를 숨길 경우 추가 -->
+						<li class="aMenuUser on">
+							<div class="aMenuTit" onclick="">사용자 관리</div>
+							<ul>
+								<!-- on : 해당 페이지의 메뉴일 경우 추가 -->
+								<li onclick="">승인대기</li>
+								<li class="on" onclick="">사용자 목록</li>
+							</ul>
+						</li>
+						<!-- aMenuUpload : 산지전용허가지 업로드 , on : 해당 페이지의 메뉴일 경우 추가, hide : 하위 메뉴를 숨길 경우 추가 -->
+						<li class="aMenuUpload">
+							<div class="aMenuTit" onclick="">산지전용허가지 업로드</div>
+						</li>
+					</ul>
+				</aside>
+
+				<!-- cPage : 기본 페이지 -->
+				<section class="cPage">
+					<!-- pagePathArea : 페이지 경로 영역 -->
+					<article class="pagePathArea">
+						<ul class="pagePathList">
+							<li>
+								<a href="#">관리자</a>
+							</li>
+							<li>
+								<a href="#">사용자관리</a>
+							</li>
+							<li>
+								<a href="#">사용자 목록</a>
+							</li>
+						</ul>
+					</article>
+
+					<!-- pageTitArea : 페이지 제목 영역 -->
+					<article class="pageTitArea">
+						<div class="pageTitLeft">
+							<div class="pageTit">사용자 목록</div>
+						</div>
+					</article>
+
+					<!-- pageConArea : 페이지 내용 영역 -->
+					<article class="pageConArea">
+						<div class="cTableWrap mt40">
+							<!-- cTableTopArea : 테이블 상단 영역 -->
+							<div class="cTableTopArea">
+								<div class="cTableTopLeft">
+									<ul class="cTableTopData">
+										<!-- num : 숫자일 경우 추가 -->
+										<li>총 <span class="num">56</span> 명</li>
+									</ul>
+									<!-- cSearchBox : 텍스트 검색창 -->
+									<div class="cSearchBox">
+										<!-- cSearchBoxInput : 텍스트 입력창으로 placeholder 값 필수 -->
+										<input type="text" class="cSearchBoxInput" placeholder="검색어를 입력해 주세요" />
+										<!-- cSearchBoxBtn : 텍스트 삭제 버튼 -->
+										<button type="button" class="cSearchBoxBtn" onclick="">
+											<span>텍스트 삭제 버튼</span>
+										</button>
+										<!-- cSearchBoxIcon : 텍스트 검색창 아이콘 -->
+										<span class="cSearchBoxIcon"></span>
+									</div>
+								</div>
+							</div>
+							<!-- cListTableArea2 : 테이블 영역 (목록 페이지) -->
+							<div class="cListTableArea2">
+								<table class="cListTable">
+									<caption class="not-view">불법산림훼손 관리 서비스의 사용자 목록</caption>
+									<colgroup>
+										<col width="*" />
+										<col width="*" />
+										<col width="*" />
+										<col width="*" />
+										<col width="*" />
+										<col width="7%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">ID</th>
+											<th scope="col">이름</th>
+											<th scope="col">부서</th>
+											<th scope="col">전화번호</th>
+											<th scope="col">신청 일시</th>
+											<th scope="col">삭제</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>jldfjld</td>
+											<td>홍길동</td>
+											<td>식품산업과</td>
+											<td>064-231-0222</td>
+											<td>2023.03.23 13:24:25</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>삭제</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>jldfjld</td>
+											<td>홍길동</td>
+											<td>식품산업과</td>
+											<td>064-231-0222</td>
+											<td>2023.03.23 13:24:25</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>삭제</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>jldfjld</td>
+											<td>홍길동</td>
+											<td>식품산업과</td>
+											<td>064-231-0222</td>
+											<td>2023.03.23 13:24:25</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>삭제</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>jldfjld</td>
+											<td>홍길동</td>
+											<td>식품산업과</td>
+											<td>064-231-0222</td>
+											<td>2023.03.23 13:24:25</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>삭제</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>jldfjld</td>
+											<td>홍길동</td>
+											<td>식품산업과</td>
+											<td>064-231-0222</td>
+											<td>2023.03.23 13:24:25</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>삭제</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>jldfjld</td>
+											<td>홍길동</td>
+											<td>식품산업과</td>
+											<td>064-231-0222</td>
+											<td>2023.03.23 13:24:25</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>삭제</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>jldfjld</td>
+											<td>홍길동</td>
+											<td>식품산업과</td>
+											<td>064-231-0222</td>
+											<td>2023.03.23 13:24:25</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>삭제</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>jldfjld</td>
+											<td>홍길동</td>
+											<td>식품산업과</td>
+											<td>064-231-0222</td>
+											<td>2023.03.23 13:24:25</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>삭제</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>jldfjld</td>
+											<td>홍길동</td>
+											<td>식품산업과</td>
+											<td>064-231-0222</td>
+											<td>2023.03.23 13:24:25</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>삭제</span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>jldfjld</td>
+											<td>홍길동</td>
+											<td>식품산업과</td>
+											<td>064-231-0222</td>
+											<td>2023.03.23 13:24:25</td>
+											<td>
+												<button type="button" class="bLineType03" onclick="">
+													<span>삭제</span>
+												</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- cPagingArea : 페이징 영역 -->
+							<div class="cPagingArea">
+								<ul class="cPagingList">
+									<!-- firstArrow : 맨 처음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+									<li class="arrow firstArrow">
+										<a href="#"></a>
+									</li>
+									<!-- prevArrow : 이전페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+									<li class="arrow prevArrow">
+										<a href="#"></a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li class="on">
+										<a href="#">1</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">2</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">3</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">4</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">5</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">6</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">7</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">8</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">9</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">10</a>
+									</li>
+									<!-- shortNum : 페이징 번호가 많을 경우 노출함, disabled : 비활성화일 경우 추가 -->
+									<li class="shortNum disabled">
+										<a href="#">...</a>
+									</li>
+									<!-- on : 현재 페이지일 경우 추가 -->
+									<li>
+										<a href="#">38</a>
+									</li>
+									<!-- nextArrow : 다음페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+									<li class="arrow nextArrow">
+										<a href="#"></a>
+									</li>
+									<!-- lastArrow : 맨 마지막페이지로 가기 버튼, disabled : 비활성화일 경우 추가 -->
+									<li class="arrow lastArrow">
+										<a href="#"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
