@@ -3814,6 +3814,9 @@ footer.footer .fInfoArea .fInfoRight>* {
 	left: 460px;
 	z-index: 905;
 }
+.cMap .mapLayerArea .mapLayerMediumLine00 + .mapLayerLine01 {
+	left: 264px;
+}
 .cMap .mapLayerArea .mapLayerLine01>.mapLayer:first-child {
 	margin-top: 0;
 }
