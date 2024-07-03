@@ -29,19 +29,19 @@
 					<ul class="nMenuList">
 						<!-- nMenu00 : 재배작물조회, on : 해당 페이지의 메뉴일 경우 추가 -->
 						<li class="nMenu00">
-							<a href="#">재배작물조회</a>
+							<a href="../cultivation/indexMap.html">재배작물조회</a>
 						</li>
 						<!-- nMenu01 : 농지이용실태 조회, on : 해당 페이지의 메뉴일 경우 추가 -->
 						<li class="nMenu01">
-							<a href="#">농지이용실태 조회</a>
+							<a href="../cultivation/indexMap2-1.html">농지이용실태 조회</a>
 						</li>
 						<!-- nMenu02 : 신고서 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
 						<li class="nMenu02">
-							<a href="#">신고서 관리</a>
+							<a href="../declaration/declarationList1-1.html">신고서 관리</a>
 						</li>
 						<!-- nMenu03 : 신고자 명부 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
 						<li class="nMenu03 on">
-							<a href="#">신고자 명부 관리</a>
+							<a href="../declaration/declarationList2-1.html">신고자 명부 관리</a>
 						</li>
 					</ul>
 				</nav>
@@ -59,13 +59,13 @@
 							</button>
 						</li>
 						<li>
-							<a href="#">
+							<a href="../admin/cultivationList1-1.html">
 								<div class="hMenuImg"><img src="../src/assets/images/icon-setting-0.svg" alt="관리자 아이콘" /></div>
 								<div class="hMenuTxt">관리자</div>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="../main/index1-1.html">
 								<div class="hMenuImg"><img src="../src/assets/images/icon-home-1.svg" alt="홈 아이콘" /></div>
 								<div class="hMenuTxt">홈</div>
 							</a>
@@ -82,7 +82,7 @@
 					<article class="pagePathArea">
 						<ul class="pagePathList">
 							<li>
-								<a href="#">신고자 명부 관리</a>
+								<a href="../declaration/declarationList2-1.html">신고자 명부 관리</a>
 							</li>
 						</ul>
 					</article>
@@ -103,15 +103,15 @@
 								<div class="tit">조회 방법 선택</div>
 								<div class="con">
 									<div class="cRadio">
-										<input type="radio" id="radioItem0000" name="radioItem00" checked onchange="" />
+										<input type="radio" id="radioItem0000" name="radioItem00" checked onclick="" />
 										<label for="radioItem0000">신고자</label>
 									</div>
 									<div class="cRadio">
-										<input type="radio" id="radioItem0001" name="radioItem00" onchange="" />
+										<input type="radio" id="radioItem0001" name="radioItem00" onclick="" />
 										<label for="radioItem0001">주소</label>
 									</div>
 									<div class="cRadio">
-										<input type="radio" id="radioItem0002" name="radioItem00" onchange="" />
+										<input type="radio" id="radioItem0002" name="radioItem00" onclick="" />
 										<label for="radioItem0002">행정리</label>
 									</div>
 									<!-- 조회 방법에서 신고자명 선택시 노출되는 검색조건 -->
@@ -140,15 +140,15 @@
 								<div class="tit">조회 방법 선택</div>
 								<div class="con">
 									<div class="cRadio">
-										<input type="radio" id="radioItem0100" name="radioItem01" onchange="" />
+										<input type="radio" id="radioItem0100" name="radioItem01" onclick="" />
 										<label for="radioItem0100">신고자</label>
 									</div>
 									<div class="cRadio">
-										<input type="radio" id="radioItem0101" name="radioItem01" checked onchange="" />
+										<input type="radio" id="radioItem0101" name="radioItem01" checked onclick="" />
 										<label for="radioItem0101">주소</label>
 									</div>
 									<div class="cRadio">
-										<input type="radio" id="radioItem0102" name="radioItem01" onchange="" />
+										<input type="radio" id="radioItem0102" name="radioItem01" onclick="" />
 										<label for="radioItem0102">행정리</label>
 									</div>
 									<!-- 조회 방법에서 주소 선택시 노출되는 검색조건 -->
@@ -177,15 +177,15 @@
 								<div class="tit">조회 방법 선택</div>
 								<div class="con">
 									<div class="cRadio">
-										<input type="radio" id="radioItem0200" name="radioItem02" onchange="" />
+										<input type="radio" id="radioItem0200" name="radioItem02" onclick="" />
 										<label for="radioItem0200">신고자</label>
 									</div>
 									<div class="cRadio">
-										<input type="radio" id="radioItem0201" name="radioItem02" onchange="" />
+										<input type="radio" id="radioItem0201" name="radioItem02" onclick="" />
 										<label for="radioItem0201">주소</label>
 									</div>
 									<div class="cRadio">
-										<input type="radio" id="radioItem0202" name="radioItem02" checked onchange="" />
+										<input type="radio" id="radioItem0202" name="radioItem02" checked onclick="" />
 										<label for="radioItem0202">행정리</label>
 									</div>
 									<!-- 조회 방법에서 행정리 선택시 노출되는 검색조건 -->
@@ -217,7 +217,7 @@
 									</ul>
 								</div>
 								<div class="cTableTopRight">
-									<button type="button" class="bLineType01" onclick="">
+									<button type="button" class="bLineType01" onclick="location.href='../declaration/declarationInsert2-1.html';">
 										<span>신고자 등록</span>
 									</button>
 									<button type="button" class="bLineType01 bDownload" onclick="">
@@ -252,7 +252,7 @@
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView2-1.html';">
 											<td>1</td>
 											<td>홍길동</td>
 											<td>1948.09.20</td>
@@ -264,7 +264,7 @@
 											<td>036-233-4563</td>
 											<td>010-3225-1112</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView2-1.html';">
 											<td>2</td>
 											<td>홍길동</td>
 											<td>1948.09.20</td>
@@ -276,7 +276,7 @@
 											<td>036-233-4563</td>
 											<td>010-3225-1112</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView2-1.html';">
 											<td>3</td>
 											<td>홍길동</td>
 											<td>1948.09.20</td>
@@ -288,7 +288,7 @@
 											<td>036-233-4563</td>
 											<td>010-3225-1112</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView2-1.html';">
 											<td>4</td>
 											<td>홍길동</td>
 											<td>1948.09.20</td>
@@ -300,7 +300,7 @@
 											<td>036-233-4563</td>
 											<td>010-3225-1112</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView2-1.html';">
 											<td>5</td>
 											<td>홍길동</td>
 											<td>1948.09.20</td>
@@ -312,7 +312,7 @@
 											<td></td>
 											<td>010-3225-1112</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView2-1.html';">
 											<td>6</td>
 											<td>홍길동</td>
 											<td>1948.09.20</td>
@@ -324,7 +324,7 @@
 											<td></td>
 											<td>010-3225-1112</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView2-1.html';">
 											<td>7</td>
 											<td>홍길동</td>
 											<td>1948.09.20</td>
@@ -336,7 +336,7 @@
 											<td></td>
 											<td>010-3225-1112</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView2-1.html';">
 											<td>8</td>
 											<td>홍길동</td>
 											<td>1948.09.20</td>
@@ -348,7 +348,7 @@
 											<td></td>
 											<td>010-3225-1112</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView2-1.html';">
 											<td>9</td>
 											<td>홍길동</td>
 											<td>1948.09.20</td>
@@ -360,7 +360,7 @@
 											<td></td>
 											<td>010-3225-1112</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView2-1.html';">
 											<td>10</td>
 											<td>홍길동</td>
 											<td>1948.09.20</td>

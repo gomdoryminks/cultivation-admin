@@ -29,19 +29,19 @@
 					<ul class="nMenuList">
 						<!-- nMenu00 : 재배작물조회, on : 해당 페이지의 메뉴일 경우 추가 -->
 						<li class="nMenu00">
-							<a href="#">재배작물조회</a>
+							<a href="../cultivation/indexMap.html">재배작물조회</a>
 						</li>
 						<!-- nMenu01 : 농지이용실태 조회, on : 해당 페이지의 메뉴일 경우 추가 -->
 						<li class="nMenu01">
-							<a href="#">농지이용실태 조회</a>
+							<a href="../cultivation/indexMap2-1.html">농지이용실태 조회</a>
 						</li>
 						<!-- nMenu02 : 신고서 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
 						<li class="nMenu02 on">
-							<a href="#">신고서 관리</a>
+							<a href="../declaration/declarationList1-1.html">신고서 관리</a>
 						</li>
 						<!-- nMenu03 : 신고자 명부 관리, on : 해당 페이지의 메뉴일 경우 추가 -->
 						<li class="nMenu03">
-							<a href="#">신고자 명부 관리</a>
+							<a href="../declaration/declarationList2-1.html">신고자 명부 관리</a>
 						</li>
 					</ul>
 				</nav>
@@ -59,13 +59,13 @@
 							</button>
 						</li>
 						<li>
-							<a href="#">
+							<a href="../admin/cultivationList1-1.html">
 								<div class="hMenuImg"><img src="../src/assets/images/icon-setting-0.svg" alt="관리자 아이콘" /></div>
 								<div class="hMenuTxt">관리자</div>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="../main/index1-1.html">
 								<div class="hMenuImg"><img src="../src/assets/images/icon-home-1.svg" alt="홈 아이콘" /></div>
 								<div class="hMenuTxt">홈</div>
 							</a>
@@ -82,7 +82,7 @@
 					<article class="pagePathArea">
 						<ul class="pagePathList">
 							<li>
-								<a href="#">신고서 관리</a>
+								<a href="../declaration/declarationList1-1.html">신고서 관리</a>
 							</li>
 						</ul>
 					</article>
@@ -105,7 +105,7 @@
 									<select>
 										<option value="2021 (2021~2022)">2021 (2021~2022)</option>
 									</select>
-									<button type="button" class="bPlus" onclick="">
+									<button type="button" class="bPlus" onclick="location.href='../declaration/declarationList1-4.html';">
 										<span>신고내역 생성 버튼</span>
 									</button>
 								</div>
@@ -115,15 +115,15 @@
 								<div class="tit">조회 방법 선택</div>
 								<div class="con">
 									<div class="cRadio">
-										<input type="radio" id="radioItem0000" name="radioItem00" onchange="" />
+										<input type="radio" id="radioItem0000" name="radioItem00" onclick="location.href='../declaration/declarationList1-1.html';" />
 										<label for="radioItem0000">신고자</label>
 									</div>
 									<div class="cRadio">
-										<input type="radio" id="radioItem0001" name="radioItem00" onchange="" />
+										<input type="radio" id="radioItem0001" name="radioItem00" onclick="location.href='../declaration/declarationList1-2.html';" />
 										<label for="radioItem0001">재배소재지</label>
 									</div>
 									<div class="cRadio">
-										<input type="radio" id="radioItem0002" name="radioItem00" checked onchange="" />
+										<input type="radio" id="radioItem0002" name="radioItem00" checked onclick="location.href='../declaration/declarationList1-3.html';" />
 										<label for="radioItem0002">담당자</label>
 									</div>
 									<!-- 조회 방법에서 담당자 선택시 노출되는 검색조건 -->
@@ -173,10 +173,10 @@
 									</div>
 								</div>
 								<div class="cTableTopRight">
-									<button type="button" class="bLineType01" onclick="">
+									<button type="button" class="bLineType01" onclick="location.href='../declaration/declarationInsert1-1.html';">
 										<span>신고서 등록</span>
 									</button>
-									<button type="button" class="bLineType01 bExcel" onclick="">
+									<button type="button" class="bLineType01 bExcel" onclick="location.href='../declaration/declarationList1-5.html';">
 										<span>엑셀 업로드</span>
 									</button>
 									<button type="button" class="bLineType01 bDownload" onclick="">
@@ -229,7 +229,7 @@
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView1-1.html';">
 											<td headers="th0000">10</td>
 											<td headers="th0001">2021-09-20</td>
 											<td headers="th0002">홍길동</td>
@@ -248,7 +248,7 @@
 											<td headers="th0007">김00</td>
 											<td headers="th0008">모바일 신고</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView1-1.html';">
 											<td headers="th0000">9</td>
 											<td headers="th0001">2021-09-20</td>
 											<td headers="th0002">홍길동</td>
@@ -267,7 +267,7 @@
 											<td headers="th0007">김00</td>
 											<td headers="th0008">엑셀 업로드</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView1-1.html';">
 											<td headers="th0000">8</td>
 											<td headers="th0001">2021-09-20</td>
 											<td headers="th0002">홍길동</td>
@@ -286,7 +286,7 @@
 											<td headers="th0007">김00</td>
 											<td headers="th0008">직접 입력</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView1-1.html';">
 											<td headers="th0000">7</td>
 											<td headers="th0001">2021-09-20</td>
 											<td headers="th0002">홍길동</td>
@@ -305,7 +305,7 @@
 											<td headers="th0007">김00</td>
 											<td headers="th0008">모바일 신고</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView1-1.html';">
 											<td headers="th0000">6</td>
 											<td headers="th0001">2021-09-20</td>
 											<td headers="th0002">홍길동</td>
@@ -324,7 +324,7 @@
 											<td headers="th0007">김00</td>
 											<td headers="th0008">모바일 신고</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView1-1.html';">
 											<td headers="th0000">5</td>
 											<td headers="th0001">2021-09-20</td>
 											<td headers="th0002">홍길동</td>
@@ -343,7 +343,7 @@
 											<td headers="th0007">김00</td>
 											<td headers="th0008">엑셀 업로드</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView1-1.html';">
 											<td headers="th0000">4</td>
 											<td headers="th0001">2021-09-20</td>
 											<td headers="th0002">홍길동</td>
@@ -362,7 +362,7 @@
 											<td headers="th0007">김00</td>
 											<td headers="th0008">모바일 신고</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView1-1.html';">
 											<td headers="th0000">3</td>
 											<td headers="th0001">2021-09-20</td>
 											<td headers="th0002">홍길동</td>
@@ -381,7 +381,7 @@
 											<td headers="th0007">김00</td>
 											<td headers="th0008">엑셀 업로드</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView1-1.html';">
 											<td headers="th0000">2</td>
 											<td headers="th0001">2021-09-20</td>
 											<td headers="th0002">홍길동</td>
@@ -400,7 +400,7 @@
 											<td headers="th0007">김00</td>
 											<td headers="th0008">직접 입력</td>
 										</tr>
-										<tr>
+										<tr onclick="location.href='../declaration/declarationView1-1.html';">
 											<td headers="th0000">1</td>
 											<td headers="th0001">2021-09-20</td>
 											<td headers="th0002">홍길동</td>
